@@ -16,7 +16,7 @@
     </ul>
 </nav>
 
-<div class="fondotext"><h1 class="titol">Informació Tècnica</h1></div>
+<div class="fondotext"><h1 class="titol">Crear Playlist</h1></div>
 
 </body>
 </html>

@@ -1,13 +1,45 @@
-{
-    "playlists": [
-        {
-            "name": "Playlist 1",
-            "songs": [
-                {"id":1, "title": "Canción 1.1", "image": "images/BillieEilish1.png"},
-                {"id":2, "title": "Canción 1.1", "image": "images/song1.png"}
-                
-            ]
-        }
-        
-    ]
-}
+[
+
+    {
+    "arists": "Billie Eilish",
+    "title": "Canco 1", 
+    "url": "",
+    "image": "images/BillieEilish1.png"},
+
+    { 
+    "arists": "Billie Eilish",
+    "title": "Canco 2", 
+    "url": "",
+    "image": "images/theweekend.jpg"},
+
+    { 
+    "arists": "Billie Eilish",
+    "title": "Canco 3", 
+    "url": "",
+    "image": "images/song1.png"},
+
+    { 
+    "arists": "Billie Eilish",
+    "title": "Canco 4", 
+    "url": "",
+    "image": "images/song1.png"},
+
+    { 
+    "arists": "Billie Eilish",
+    "title": "Canco 5", 
+    "url": "",
+    "image": "images/song1.png"},
+
+    { 
+    "arists": "Billie Eilish",
+    "title": "Canco 6", 
+    "url": "",
+    "image": "images/song1.png"},
+
+    { 
+    "arists": "Billie Eilish",
+    "title": "Canco 7", 
+    "url": "",
+    "image": "images/song1.png"}
+    
+]
