@@ -1,0 +1,13 @@
+{
+    "playlists": [
+        {
+            "name": "Playlist 1",
+            "songs": [
+                {"id":1, "title": "Canción 1.1", "image": "images/BillieEilish1.png"},
+                {"id":2, "title": "Canción 1.1", "image": "images/song1.png"}
+                
+            ]
+        }
+        
+    ]
+}

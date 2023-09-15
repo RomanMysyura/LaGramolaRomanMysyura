@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="images/jukeboxlogo.png">
-    <title>Informació Tècnica</title>
+    <title>Crear Playlist</title>
 </head>
 <body>
 <nav class="menu">

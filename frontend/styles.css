@@ -1,26 +1,46 @@
 /* Diseny per MOVIL */
-ul{
-   list-style: none;
-   gap: 10px;
-   justify-content: center;
-   padding-left: 13px;
+.menu{
+    padding: 0px;
+    margin: 0px;
+    background-color: #00296b;
+    font-weight: bold;
 }
-a{
-    color: black;
+.fondotext{
+    margin: 0px;
+    padding: 10px;
+    background-color: #00509d;
+}
+.titol{
+    margin: 0px;
+    padding: 10px;
+    color: aliceblue;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-left: 0px;
+    margin: 0px;
+    padding-bottom: 8px;
+ }
+ a{
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px 10px;
-    background-color: #48cae4;
+    
     width: 150px;
     display: block;
     text-align: center;
     border-radius: 5px;
-    margin-bottom: 10px;
-}
+    margin-top: 8px;
+ }
 a:hover{
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px 10px;
-    background-color: #00b4d8;
+    background-color: #003f88;
     width: 150px;
     display: block;
     text-align: center;
@@ -31,7 +51,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ade8f4;
+    background-color: #72bac9;
 }
 .nomsong{
     font-family: Arial, Helvetica, sans-serif;
@@ -63,33 +83,90 @@ body {
 .art-box {
     margin-top: 10px;
 }
+.art-box {
+    margin-top: 10px;
+}
 
+.buttoncontrol:hover{
+    cursor: pointer;
+}
+
+.controls-box{
+    background-color: #00296b;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+.controls-box img {
+    height: 25px;
+    width: 25px;
+
+}
+.controls-box button{
+    padding: 5px;
+    background-color: #00296b;
+    border: none;
+    border-radius: 8px;
+}
+.controls-box button:hover{
+    padding: 5px;
+    background-color: #083a89;
+    border: none;
+    cursor: pointer;
+    
+}
 
 
 /* Diseny per TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
+    .menu{
+        padding: 0px;
+        margin: 0px;
+        background-color: #00296b;
+        font-weight: bold;
+    }
+    .fondotext{
+        margin: 0px;
+        padding: 10px;
+        background-color: #00509d;
+    }
+    .titol{
+        margin: 0px;
+        padding: 10px;
+        color: aliceblue;
+
+    }
     ul{
         list-style: none;
         display: flex;
         gap: 10px;
         justify-content: center;
         padding-left: 0px;
+        margin: 0px;
+        padding-bottom: 8px;
      }
      a{
-         color: black;
-         text-decoration: none;
-         padding: 10px 10px;
-         background-color: #48cae4;
-         width: 150px;
-         display: block;
-         text-align: center;
-         border-radius: 5px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 10px 10px;
+        
+        width: 150px;
+        display: block;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 8px;
      }
      a:hover{
-         color: black;
+         color: rgb(255, 255, 255);
          text-decoration: none;
          padding: 10px 10px;
-         background-color: #00b4d8;
+         background-color: #003f88;
          width: 150px;
          display: block;
          text-align: center;
@@ -98,7 +175,7 @@ body {
         font-family: 'Arial', sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #ade8f4;
+        background-color: #72bac9;
     }
     .nomsong{
         font-family: Arial, Helvetica, sans-serif;
@@ -129,42 +206,102 @@ body {
     
     .art-box {
         margin-top: 10px;
+    }
+    .art-box {
+        margin-top: 10px;
+    }
+    
+    .buttoncontrol:hover{
+        cursor: pointer;
+    }
+
+    .controls-box{
+        background-color: #00296b;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    
+    .controls-box img {
+        height: 25px;
+        width: 25px;
+        
+    }
+    .controls-box button{
+        padding: 5px;
+        background-color: #00296b;
+        border: none;
+        border-radius: 8px;
+    }
+    .controls-box button:hover{
+        padding: 5px;
+        background-color: #083a89;
+        border: none;
+        cursor: pointer;
+        
     }
 }
 
 /* Diseny per ORDINADOR */
 @media (min-width: 1024px) {
+    .menu{
+        padding: 0px;
+        margin: 0px;
+        background-color: #00296b;
+        font-weight: bold;
+    }
+    .fondotext{
+        margin: 0px;
+        padding: 10px;
+        background-color: #00509d;
+    }
+    .titol{
+        margin: 0px;
+        padding: 10px;
+        color: aliceblue;
+
+    }
     ul{
         list-style: none;
         display: flex;
         gap: 10px;
         justify-content: center;
         padding-left: 0px;
+        margin: 0px;
+        padding-bottom: 8px;
      }
      a{
-         color: black;
+         color: rgb(255, 255, 255);
          text-decoration: none;
          padding: 10px 10px;
-         background-color: #48cae4;
+         
          width: 150px;
          display: block;
          text-align: center;
          border-radius: 5px;
+         margin-top: 8px;
      }
      a:hover{
-         color: black;
+         color: rgb(255, 255, 255);
          text-decoration: none;
          padding: 10px 10px;
-         background-color: #00b4d8;
+         background-color: #003f88;
          width: 150px;
          display: block;
          text-align: center;
+         margin-top: 8px;
      }
     body {
         font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #ade8f4;
+        margin: 0px;
+        padding: 0px;
+        background-color: #72bac9;
+        border: 0px;
     }
     .nomsong{
         font-family: Arial, Helvetica, sans-serif;
@@ -196,4 +333,43 @@ body {
     .art-box {
         margin-top: 10px;
     }
+    
+    .buttoncontrol:hover{
+        cursor: pointer;
+    }
+
+    .controls-box{
+        background-color: #00296b;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    
+    .controls-box img {
+        height: 25px;
+        width: 25px;
+        
+    }
+    .controls-box button{
+        padding: 5px;
+        background-color: #00296b;
+        border: none;
+        border-radius: 8px;
+    }
+    .controls-box button:hover{
+        padding: 5px;
+        background-color: #083a89;
+        border: none;
+        cursor: pointer;
+        
+    }
 }
+
+
+
+  
