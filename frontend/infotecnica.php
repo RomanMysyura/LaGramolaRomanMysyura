@@ -18,5 +18,11 @@
 
 <div class="fondotext"><h1 class="titol">Informació Tècnica</h1></div>
 
+
+
+
+
+
+
 </body>
 </html>

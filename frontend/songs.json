@@ -1,45 +1,48 @@
 [
 
     {
+    "num": 1,
     "arists": "Billie Eilish",
-    "title": "Canco 1", 
-    "url": "",
-    "image": "images/BillieEilish1.png"},
-
-    { 
-    "arists": "Billie Eilish",
-    "title": "Canco 2", 
-    "url": "",
-    "image": "images/theweekend.jpg"},
-
-    { 
-    "arists": "Billie Eilish",
-    "title": "Canco 3", 
-    "url": "",
+    "title": "Billie Eilish - Happier Than Ever", 
+    "url": "songs/billie-eilish_-_happier-than-ever.mp3",
     "image": "images/song1.png"},
 
     { 
+    "num": 2,
     "arists": "Billie Eilish",
-    "title": "Canco 4", 
-    "url": "",
-    "image": "images/song1.png"},
+    "title": "Billie Eilish - Bad Guy", 
+    "url": "songs/billie-eilish_-_bad-guy.mp3",
+    "image": "images/song2.png"},
+
+    {
+    "num": 3,
+    "arists": "50 Cent",
+    "title": "50 Cent - In Da Club", 
+    "url": "songs/50-cent_-_in-da-club.mp3",
+    "image": "images/song3.png"},
 
     { 
-    "arists": "Billie Eilish",
-    "title": "Canco 5", 
-    "url": "",
-    "image": "images/song1.png"},
+    "num": 4,
+    "arists": "Eminem",
+    "title": "Eminem - The Real Slim Shady", 
+    "url": "songs/eminem_-_the-real-slim-shady.mp3",
+    "image": "images/song4.png"},
 
     { 
-    "arists": "Billie Eilish",
-    "title": "Canco 6", 
-    "url": "",
-    "image": "images/song1.png"},
+    "num": 5,    
+    "arists": "Justin Bieber",
+    "title": "Justin Bieber - Chance The Rapper Holy", 
+    "url": "songs/justin-bieber_-_holy.mp3",
+    "image": "images/song5.png"},
 
     { 
-    "arists": "Billie Eilish",
-    "title": "Canco 7", 
-    "url": "",
-    "image": "images/song1.png"}
+    "num": 6,
+    "arists": "Justin Bieber",
+    "title": "Justin Bieber, Kehlani - Get Me", 
+    "url": "songs/justin-bieber_-_get-me.mp3",
+    "image": "images/song6.png"}
+
     
+    
+
 ]
