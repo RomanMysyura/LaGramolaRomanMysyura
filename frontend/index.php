@@ -44,9 +44,9 @@ if ($songid == -1) {
 
 <form class="nomusuari" name="formulario" method="post">
 
-    Nom: <input type="text" name="nom" value="">
+    Nom: <input class="textnom" type="text" name="nom" value="">
 
-<input type="submit" />
+<input class="enviar" type="submit" />
 
 </form>
 

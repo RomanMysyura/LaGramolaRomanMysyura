@@ -724,9 +724,30 @@ input::-webkit-slider-thumb {
         top: 2px;
         left: 1%;
     }
-
-
-
+    
+    .textnom{
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px black;
+        background-color: #72bac9;
+    }
+    .textnom:hover{
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px black;
+    }
+    .enviar{
+        border-radius: 1px;
+        box-shadow: 1px 1px 1px black;
+        background-color: #72bac9;
+    }
+    .enviar:hover{
+        
+        cursor: pointer;
+        border-radius: 1px;
+        box-shadow: 2px 2px 2px black;
+        transition: 0.1s ease;
+        transform: scale(1.03);
+        background-color: #41b0c6;
+    }
 
 
 }
