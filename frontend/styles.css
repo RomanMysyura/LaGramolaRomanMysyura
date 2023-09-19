@@ -421,7 +421,7 @@ input::-webkit-slider-thumb {
       }
 
     .songsplaylist {
-        /* display: none; */
+        
         list-style-type: none;
         padding: 0;
         margin-top: 10px;
@@ -629,12 +629,12 @@ input::-webkit-slider-thumb {
       
 
       .playlists {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
-        
-        
+       
+      
     }
+     
     
 
     .playlist {
@@ -647,8 +647,10 @@ input::-webkit-slider-thumb {
         background-color: antiquewhite;
         box-shadow: 4px 4px 5px black;
         border-radius: 2px;
+        height: 100%;
+        padding-bottom: 0px;
         
-        
+
     }
 
     .playlist:hover {
@@ -680,15 +682,48 @@ input::-webkit-slider-thumb {
         width: 100%;
         display: grid;
         justify-content: left;
+        font-weight: bold;
+        text-shadow: 0px 0px 0px rgb(0, 0, 0);
+        font-size: 15px;
         
-    }
+        }
     a.botocanco:hover{
         text-decoration: none;
-        background-color: #5888bf;
+        background-color: #184c9e;
         width: 100%;
-       
-    }
+        }
   
+    details{
+        display: block;
+        
+        }
+
+      details summary {  
+        list-style: none;
+        display: block;
+        height: 100%;
+        }
+     p{
+        height: 100%;
+        display: block;
+        }
+      
+    .musica{
+        width: 40%;
+        display: inline-block
+        }
+    .nomusuari{
+        position: fixed;
+        top: 15px;
+        color: aliceblue;
+        left: 85%;
+    }
+    p{
+        color: aliceblue;
+        position: fixed;
+        top: 2px;
+        left: 1%;
+    }
 
 
 

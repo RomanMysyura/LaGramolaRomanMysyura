@@ -65,15 +65,17 @@ function carregarPlaylists(playlists, songs) {
 
 
         divPlaylists.innerHTML += `
+        
         <div class="playlist">
-        <h3>${playlist.name}</h4>
-            
-            <ul class="songsplaylist">
-                ${divSongs}
-            </ul>
+
+        <details>
+            <summary><h3>${playlist.name}</h3></summary>
+            <p><ul class="songsplaylist">${divSongs}</p>
+        </details>
         </div>
         
         `;
     });
 }
+
 

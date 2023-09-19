@@ -18,7 +18,6 @@ if ($songid == -1) {
 
 
 
-
 ?>
 <!DOCTYPE html>
 <html lang="ca">
@@ -38,37 +37,41 @@ if ($songid == -1) {
         <li><a href="crearplaylist.php">Crear Playlist</a></li>
     </ul>
 </nav>
+
+
+
+
+
+<form class="nomusuari" name="formulario" method="post">
+
+    Nom: <input type="text" name="nom" value="">
+
+<input type="submit" />
+
+</form>
+
+
+<?php
+
+if (isset($_POST["nom"]))  {
+    $nom = $_POST['nom'];
+    $_SESSION["usuari"] = $nom;
+}
+
+if (isset($_SESSION["usuari"])) {
+    echo "<p>Nom del usuari: " . $_SESSION["usuari"] . "</p>";
+}
+
+?>
+
+
+
+
+
+
+
 <div class="fondotext"><h1 class="titol">Playlists</h1></div>
 
-
-
-
-<details>
-  <summary>Question number 2</summary>
-  
-</details>
-  
-  <details>
-  <summary>Question number 3</summary>
-  <p>Another FAQ answer, and it looks like it was also hidden.</p>
-</details>
-  
-  <details>
-  <summary>Question number 4</summary>
-  <p>Another response, and it seems that they are still not giving us any information.</p>
-</details>
-  
-  <details>
-  <summary>And question number 5</summary>
-  <p>It seems that this is already the last answer. Finally we have reached the end!</p>
-</details>
-
-
-
-<div class="playlists" id="playlists">
-
-
-</div>
 
 
 
@@ -90,17 +93,26 @@ if ($songid == -1) {
             <button onclick="randomSong('<?= count($songs)?>', '<?=$songid?>')"><img src="images/barajar.svg"></button>
             
         </div>
-        <input class="progreso" type="range">
+        <input class="progreso" type="range" value="">
         <input class="volum" type="range">
         <div class="status-box">
 
         </div>
 
     </div>
-    <div class="playlists">
 
+
+    
+    <div class="musica">
+        <div class="playlists" id="playlists">
+
+        </div>
+    
 
     </div>
+
+
+    
 
 
 
