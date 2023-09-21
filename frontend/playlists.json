@@ -1,41 +1,5 @@
-[
-    {
-        "name": "PLAYLIST 4 GYM",
-        "id": 0,
-        "songs":[
-            0,
-            1,
-            2,
-            3,
-            4,
-            5
-        ]
-
-    },
-    {
-        "name": "PLAYLIST PER ESTUDIAR",
-        "id": 0,
-        "songs":[
-            3,
-            5,
-            2
-        ]
-
-    },
-    {
-        "name": "PLAYLIST PER JUGAR",
-        "id": 0,
-        "songs":[
-            0,
-            1,
-            2,
-            3,
-            4
-        ]
-
-    }
- 
- 
-   
-
-]
+[{
+    "name":"PLAYLIST 4 GYM",
+    "id":1,
+    "songs":[0,1,2,3,4,5]
+    },{"name":"PLAYLIST PER ESTUDIAR","id":1,"songs":[3,5,2]},{"name":"PLAYLIST PER JUGAR","id":2,"songs":[0,1,2,3,4]}]

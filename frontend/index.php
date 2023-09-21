@@ -4,6 +4,7 @@ $songs = json_decode(file_get_contents("songs.json"));
 
 $songid = 0;
 
+
 if (!isset($_GET["songid"])) {
     $songid = 0;
 } else {
@@ -30,6 +31,7 @@ if ($songid == -1) {
     <title>Gramola MP3</title>
 </head>
 <body>
+    
 <nav class="menu">
     <ul>
         <li><a href="index.php">Playlists</a></li>
@@ -67,7 +69,7 @@ if (isset($_SESSION["usuari"])) {
 
 
 
-
+<audio id="player"></audio>
 
 
 <div class="fondotext"><h1 class="titol">Playlists</h1></div>
@@ -93,7 +95,10 @@ if (isset($_SESSION["usuari"])) {
             <button onclick="randomSong('<?= count($songs)?>', '<?=$songid?>')"><img src="images/barajar.svg"></button>
             
         </div>
-        <input class="progreso" type="range" value="">
+
+
+       
+        <input class="progreso" type="range" min="0" value="0" max="100">
         <input class="volum" type="range">
         <div class="status-box">
 
@@ -107,9 +112,11 @@ if (isset($_SESSION["usuari"])) {
         <div class="playlists" id="playlists">
 
         </div>
-    
+    </div>
+    <div class="topsongs">
 
     </div>
+
 
 
     

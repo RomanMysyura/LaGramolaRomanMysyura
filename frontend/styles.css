@@ -65,14 +65,16 @@ body {
 
 .iconasong{
     width: 100%;
-    max-width: 110px;
+    max-width: 250px;
     height: auto;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     position: fixed;
     bottom: 150px;
-    left: 47%;
+    left: 43%;
 }
+
+
 .logosong {
     display: flex;
     justify-content: center;  
@@ -142,26 +144,34 @@ body {
     width: 10%;
     appearance: none;
     outline: none;
-    height: 1.2vmin;
+    height: 7px;
     border-radius: 0.5vmin;
     background-color: #5888bf;
 }
+.volum:hover{
+    
+    height: 12px;
+    transition: 0.1s ease;
+    cursor: pointer;
+    background-color: #5888bf;
+}
 .progreso{
+    transition: 0.1s ease;
     display: flex;
     justify-content: center;
     position: fixed;
     bottom: 72px;
     width: 100%;
-
-    
+    border-radius: 0px;
     appearance: none;
     outline: none;
     height: 7px;
-    border-radius: 0px;
-    background-color: #5888bf;
+    background-color: #a2bede;
+
+    
 }
 .progreso:hover{
-        
+    
     height: 12px;
     transition: 0.1s ease;
     cursor: pointer;
@@ -175,12 +185,16 @@ input::-webkit-slider-thumb {
     background: white;
     border-radius: 50%;
   }
+  
+
   .playlists {
-    
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    
+   
+  
 }
+ 
+
 
 .playlist {
     transition: 0.2s ease;
@@ -192,7 +206,10 @@ input::-webkit-slider-thumb {
     background-color: antiquewhite;
     box-shadow: 4px 4px 5px black;
     border-radius: 2px;
+    height: 100%;
+    padding-bottom: 0px;
     
+
 }
 
 .playlist:hover {
@@ -214,9 +231,82 @@ input::-webkit-slider-thumb {
 }
 .song{
     color: #1b1e21;
+    justify-content: left;
     
 }
 
+a.botocanco{
+    color: #000000;
+    padding: 10px 10px;
+    width: 100%;
+    display: grid;
+    justify-content: left;
+    font-weight: bold;
+    text-shadow: 0px 0px 0px rgb(0, 0, 0);
+    font-size: 15px;
+    
+    }
+a.botocanco:hover{
+    text-decoration: none;
+    background-color: #184c9e;
+    width: 100%;
+    }
+
+details{
+    display: block;
+    
+    }
+
+  details summary {  
+    list-style: none;
+    display: block;
+    height: 100%;
+    }
+ p{
+    height: 100%;
+    display: block;
+    }
+  
+.musica{
+    width: 40%;
+    display: inline-block
+    }
+.nomusuari{
+    position: fixed;
+    top: 15px;
+    color: aliceblue;
+    left: 85%;
+}
+p{
+    color: aliceblue;
+    position: fixed;
+    top: 2px;
+    left: 1%;
+}
+
+.textnom{
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+    background-color: #72bac9;
+}
+.textnom:hover{
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+.enviar{
+    border-radius: 1px;
+    box-shadow: 1px 1px 1px black;
+    background-color: #72bac9;
+}
+.enviar:hover{
+    
+    cursor: pointer;
+    border-radius: 1px;
+    box-shadow: 2px 2px 2px black;
+    transition: 0.1s ease;
+    transform: scale(1.03);
+    background-color: #41b0c6;
+}
 
 /* Diseny per TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -282,237 +372,16 @@ input::-webkit-slider-thumb {
         color: #000000;
     }
     
-    
-    .iconasong{
-        width: 100%;
-        max-width: 110px;
-        height: auto;
-        border-radius: 5px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-        position: fixed;
-        bottom: 150px;
-        left: 47%;
-    }
-    .logosong {
-        display: flex;
-        justify-content: center;  
-        align-items: center;     
-        height: 100%;            
-    }
-    
-    .reproductor {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    
-    }
-    
-    .art-box {
-        margin-top: 10px;
-        position: fixed;
-        bottom: 80px;
-        background-color: antiquewhite;
-        width: 100%;
-    }
-    
-    .buttoncontrol:hover{
-        cursor: pointer;
-    }
-
-    .controls-box{
-        background-color: #00296b;
-        border-radius: 4px;
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        gap: 20px;
-    }
-
-    
-    .controls-box img {
-        height: 25px;
-        width: 25px;
-
-        
-    }
-    .controls-box button{
-        padding: 5px;
-        background-color: #00296b;
-        border: none;
-        border-radius: 8px;
-    }
-    .controls-box button:hover{
-        padding: 5px;
-        background-color: #083a89;
-        border: none;
-        cursor: pointer;
-        
-    }
-
-    .volum{
-        display: flex;
-        justify-content: right;
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 10%;
-        appearance: none;
-        outline: none;
-        height: 1.2vmin;
-        border-radius: 0.5vmin;
-        background-color: #5888bf;
-    }
-    .progreso{
-        display: flex;
-        justify-content: center;
-        position: fixed;
-        bottom: 72px;
-        width: 100%;
-
-        
-        appearance: none;
-        outline: none;
-        height: 7px;
-        border-radius: 0px;
-        background-color: #5888bf;
-    }
-    .progreso:hover{
-        
-        height: 12px;
-        transition: 0.1s ease;
-        cursor: pointer;
-        background-color: #5888bf;
-    }
-    input::-webkit-slider-thumb {
-        cursor: pointer;
-        appearance: none;
-        width: 2vmin;
-        height: 2vmin;
-        background: white;
-        border-radius: 50%;
-      }
-      .playlists {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-        
-    }
-
-    .playlist {
-        transition: 0.2s ease;
-        border: 1px solid black;
-        padding: 10px;
-        padding-top: 0px;
-        margin: 10px;
-        cursor: pointer;
-        background-color: antiquewhite;
-        box-shadow: 4px 4px 5px black;
-        border-radius: 2px;
-        
-    }
-
-    .playlist:hover {
-        transition: 0.1s ease;
-        transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-      }
-
-    .songsplaylist {
-        
-        list-style-type: none;
-        padding: 0;
-        margin-top: 10px;
-        display: grid;
-        justify-content: left;
-    }
-
-    .playlist.active .songsplaylist {
-        display: block;
-    }
-    .song{
-        color: #1b1e21;
-        
-    }
-}
-
-/* Diseny per ORDINADOR */
-@media (min-width: 1024px) {
-    
-    .menu{
-        padding: 0px;
-        margin: 0px;
-        background-color: #00296b;
-        font-weight: bold;
-    }
-    .fondotext{
-        margin: 0px;
-        padding: 10px;
-        background-color: #00509d;
-    }
-    .titol{
-        margin: 0px;
-        padding: 10px;
-        color: aliceblue;
-
-    }
-    ul{
-        list-style: none;
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        padding-left: 0px;
-        margin: 0px;
-        padding-bottom: 8px;
-     }
-     a{
-         color: rgb(255, 255, 255);
-         text-decoration: none;
-         padding: 10px 10px;
-         
-         width: 150px;
-         display: block;
-         text-align: center;
-         border-radius: 5px;
-         margin-top: 8px;
-     }
-     a:hover{
-         color: rgb(255, 255, 255);
-         text-decoration: none;
-         padding: 10px 10px;
-         background-color: #003f88;
-         width: 150px;
-         display: block;
-         text-align: center;
-         margin-top: 8px;
-     }
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0px;
-        padding: 0px;
-        background-color: #72bac9;
-        border: 0px;
-    }
-    .nomsong{
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        text-shadow: 1px 1px 2px rgb(118, 110, 110);
-        font-size: 20px;
-        color: #000000;
-    }
-    
    
     .iconasong{
         width: 100%;
-        max-width: 110px;
+        max-width: 250px;
         height: auto;
         border-radius: 5px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
         position: fixed;
         bottom: 150px;
-        left: 47%;
+        left: 43%;
     }
    
 
@@ -748,8 +617,370 @@ input::-webkit-slider-thumb {
         transform: scale(1.03);
         background-color: #41b0c6;
     }
+}
 
+/* Diseny per ORDINADOR */
+@media (min-width: 1024px) {
+    
+    .menu{
+        padding: 0px;
+        margin: 0px;
+        background-color: #00296b;
+        font-weight: bold;
+    }
+    .fondotext{
+        margin: 0px;
+        padding: 10px;
+        background-color: #00509d;
+    }
+    .titol{
+        margin: 0px;
+        padding: 10px;
+        color: aliceblue;
 
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        padding-left: 0px;
+        margin: 0px;
+        padding-bottom: 8px;
+     }
+     a{
+         color: rgb(255, 255, 255);
+         text-decoration: none;
+         padding: 10px 10px;
+         
+         width: 150px;
+         display: block;
+         text-align: center;
+         border-radius: 5px;
+         margin-top: 8px;
+     }
+     a:hover{
+         color: rgb(255, 255, 255);
+         text-decoration: none;
+         padding: 10px 10px;
+         background-color: #003f88;
+         width: 150px;
+         display: block;
+         text-align: center;
+         margin-top: 8px;
+     }
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background-color: #72bac9;
+        border: 0px;
+    }
+    .nomsong{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgb(118, 110, 110);
+        font-size: 20px;
+        color: #000000;
+    }
+    
+   
+    .iconasong{
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        bottom: 150px;
+        left: 43.5%;
+    }
+ 
+
+    .logosong {
+        display: flex;
+        justify-content: center;  
+        align-items: center;     
+        height: 100%;            
+    }
+    
+    .reproductor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    
+    }
+    
+    .art-box {
+        margin-top: 10px;
+        position: fixed;
+        bottom: 80px;
+        background-color: antiquewhite;
+        width: 100%;
+    }
+    
+    .buttoncontrol:hover{
+        cursor: pointer;
+    }
+
+    .controls-box{
+        background-color: #00296b;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    
+    .controls-box img {
+        height: 25px;
+        width: 25px;
+
+        
+    }
+    .controls-box button{
+        padding: 5px;
+        background-color: #00296b;
+        border: none;
+        border-radius: 8px;
+    }
+    .controls-box button:hover{
+        padding: 5px;
+        background-color: #083a89;
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    .volum{
+        display: flex;
+        justify-content: right;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 10%;
+        appearance: none;
+        outline: none;
+        height: 7px;
+        border-radius: 0.5vmin;
+        background-color: #5888bf;
+    }
+    .volum:hover{
+        
+        height: 12px;
+        transition: 0.1s ease;
+        cursor: pointer;
+        background-color: #5888bf;
+    }
+    .progreso{
+        transition: 0.1s ease;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 72px;
+        width: 100%;
+        border-radius: 0px;
+        appearance: none;
+        outline: none;
+        height: 7px;
+        background-color: #a2bede;
+
+        
+    }
+    .progreso:hover{
+        
+        height: 12px;
+        transition: 0.1s ease;
+        cursor: pointer;
+        background-color: #5888bf;
+    }
+    input::-webkit-slider-thumb {
+        cursor: pointer;
+        appearance: none;
+        width: 2vmin;
+        height: 2vmin;
+        background: white;
+        border-radius: 50%;
+      }
+      
+
+      .playlists {
+        grid-template-columns: 1fr 1fr 1fr;
+        
+      
+    }
+     
+    
+
+    .playlist {
+        transition: 0.2s ease;
+        border: 1px solid black;
+        padding: 10px;
+        padding-left: 13px;
+        padding-top: 0px;
+        margin: 10px;
+        margin-left: 20px;
+        cursor: pointer;
+        background-color: antiquewhite;
+        box-shadow: 4px 4px 5px black;
+        border-radius: 2px;
+        height: 100%;
+        padding-bottom: 0px;
+        
+    }
+
+    .playlist:hover {
+        transition: 0.1s ease;
+        transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+    .songsplaylist {
+        /* display: none; */
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+        display: grid;
+        justify-content: left;
+    }
+
+    .playlist.active .songsplaylist {
+        display: block;
+    }
+    .song{
+        color: #1b1e21;
+        justify-content: left;
+        
+    }
+    
+    a.botocanco{
+        color: #000000;
+        padding: 10px 10px;
+        width: 100%;
+        display: grid;
+        justify-content: left;
+        font-weight: bold;
+        text-shadow: 0px 0px 0px rgb(0, 0, 0);
+        font-size: 15px;
+        margin-bottom: 8px;
+        margin-top: 0px;
+        }
+    a.botocanco:hover{
+        text-decoration: none;
+        background-color: #184c9e;
+        width: 100%;
+        }
+  
+    details{
+        display: block;
+        
+        }
+
+      details summary {  
+        list-style: none;
+        display: block;
+        height: 100%;
+        }
+     p{
+        height: 10px;
+        display: block;
+        color: aliceblue;
+        position: fixed;
+        top: 2px;
+        left: 1%;
+        }
+      
+    .musica{
+        width: 40%;
+        
+        height: 10px;
+        
+        }
+    .nomusuari{
+        position: fixed;
+        top: 15px;
+        color: rgb(255, 255, 255);
+        left: 80%;
+    }
+    
+    
+    .textnom{
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px black;
+        background-color: #ffffff;
+    }
+    .textnom:hover{
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px black;
+    }
+    .enviar{
+        border-radius: 1px;
+        box-shadow: 1px 1px 1px black;
+        background-color: #ffffff;
+    }
+    .enviar:hover{
+        
+        cursor: pointer;
+        border-radius: 1px;
+        box-shadow: 2px 2px 2px black;
+        transition: 0.1s ease;
+        transform: scale(1.03);
+        background-color: #8f9192;
+    }
+
+   
+    /* -- Estils per la pagina crearplaylist.php -- */
+    .divCreacioPlayist{
+        background-color: #8b939d;
+        align-content: center;
+        width: 580px;
+        margin: auto;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 10px;
+        margin-top: 20px;
+        box-shadow: 3px 3px 3px black;
+    }
+    
+    #formulariplaylists{
+        align-content: center;
+        margin: 20px;
+    }
+    #titolcrearplaylist{
+        font-weight: bold;
+        text-align: center;
+    }
+    #nom_playlist{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    #triarlescancons{
+        margin-bottom: 10px;
+    }
+    #enviarplaylist{
+        width: 100%;
+        background-color: #00296b;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    #enviarplaylist:hover{
+        transition: transform .2s;
+        background-color: #00296b;
+        transform: scale(1.02);
+    }
+  
 }
 
 

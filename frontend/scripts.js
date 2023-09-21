@@ -79,3 +79,68 @@ function carregarPlaylists(playlists, songs) {
 }
 
 
+
+
+
+let audioElement = document.getElementById('player');
+let queryString = window.location.search;
+
+let urlParams = new URLSearchParams(queryString);
+
+// Asignar el valor del parámetro 'songid' a 'currentSong'
+let currentSong = urlParams.get('songid');
+
+// Convertirlo a número (si sabes que siempre será un número)
+currentSong = Number(currentSong);
+
+console.log(currentSong); // Esto mostrará 0, 3
+
+
+
+let songs = []; 
+
+
+
+
+// Cargar canciones desde songs.json
+fetch('songs.json')
+    .then(response => response.json())
+    .then(data => {
+        songs = data;
+    });
+
+function playPause() {
+    if (audioElement.paused) {
+        audioElement.setAttribute('src', songs[currentSong].url);
+        audioElement.play();
+    } else {
+        audioElement.pause();
+    }
+}
+
+function stopSong() {
+    audioElement.pause();
+    audioElement.currentTime = 0; // Fa reset a la posició de la cancó
+}
+
+const cancion = document.getElementById('player');
+const progreso = document.querySelector('.progreso');
+
+cancion.addEventListener('timeupdate', function() {
+    // Calcular el porcentaje de progreso de la canción
+    let porcentaje = (cancion.currentTime / cancion.duration) * 100;
+    
+    
+    // Actualizar el valor del input
+    progreso.value = porcentaje;
+});
+
+progreso.addEventListener("input", function () {
+    cancion.currentTime = progreso.value / 100 * cancion.duration;
+});
+
+
+// Asegúrate de que el rango máximo del input sea igual a la duración de la canción
+cancion.addEventListener('loadedmetadata', function() {
+    progreso.max = cancion.duration;
+});

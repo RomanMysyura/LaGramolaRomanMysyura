@@ -48,8 +48,50 @@ if (isset($_SESSION["usuari"])) {
     echo "<p>Nom del usuari: " . $_SESSION["usuari"] . "</p>";
 }
 
+
+
 ?>
-<div class="fondotext"><h1 class="titol">Crear Playlist</h1></div>
+<div class="fondotext">
+    <h1 class="titol">Crear Playlist</h1>
+</div>
+
+<div class="divCreacioPlayist">
+<form action="guardar_playlist.php" method="post" id="formulariplaylists">
+    <label for="nom_playlist" id="titolcrearplaylist">Nom de la playlist:</label>
+    <input id="nom_playlist" type="text" name="nom_playlist" required>
+        <br><br>
+
+    <label id="triarlescancons">Tria les cançons:</label>
+        <br><br>
+
+    <?php
+        $songs = json_decode(file_get_contents("songs.json"), true);
+            foreach ($songs as $song) {
+                echo "<input type='checkbox' name='cancons[]' value='{$song['num']}'> {$song['arists']} - {$song['title']}<br>";
+        }
+    ?>
+
+    <br>
+    <input id="enviarplaylist" type="submit" value="Enviar">
+</form>
+</div>
+
+<div class="divCreacioPlayist">
+<form action="guardar_playlist.php" method="post" id="formulariplaylists">
+    <label for="nom_playlist" id="titolcrearplaylist">Eliminar la playlist:</label>
+
+    <label id="triarlescancons">Tria la playlist:</label>
+        <br><br>
+
+    <?php
+      
+    ?>
+
+    <br>
+    <input id="enviarplaylist" type="submit" value="Eliminar">
+</form>
+</div>
+
 
 </body>
 </html>
