@@ -694,8 +694,9 @@ p{
         position: fixed;
         bottom: 150px;
         left: 43.5%;
+        transition: transform .2s;
     }
- 
+    
 
     .logosong {
         display: flex;
@@ -748,13 +749,14 @@ p{
         background-color: #00296b;
         border: none;
         border-radius: 8px;
+        transition: transform .2s;
     }
     .controls-box button:hover{
         padding: 5px;
         background-color: #083a89;
         border: none;
         cursor: pointer;
-        
+        transform: scale(1.3);
     }
 
     .volum{
@@ -854,7 +856,9 @@ p{
     .song{
         color: #1b1e21;
         justify-content: left;
-        
+        display: flex;
+        align-items: center;
+        gap: 10px; 
     }
     
     a.botocanco{
@@ -974,6 +978,7 @@ p{
         border: none;
         border-radius: 4px;
         cursor: pointer;
+        box-shadow: 1px 1px 1px black;
     }
     #enviarplaylist:hover{
         transition: transform .2s;
@@ -981,6 +986,60 @@ p{
         transform: scale(1.02);
     }
   
+
+    .divMostrarcançons {
+        border: 1px solid black;
+        cursor: pointer;
+        background-color: #1a66ae;
+        box-shadow: 1px 1px 1px black;
+        border-radius: 2px;
+        height: 100%;
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-bottom: 10px
+        
+    }
+    #titoleliminarplaylist{
+        font-weight: bold;
+        padding-left: 15px;
+        
+    }
+    #eliminarplaylist{
+        padding-top: 5px;
+        display: flex;      
+        align-items: center; 
+        justify-content: space-between;   
+        padding-left: 15px;      
+    }
+
+    #eliminarplaylist a {
+        margin-top: 0px;
+        background-color: #00296b;background-color: #00296b;
+        margin-right: 15px;
+    }
+    #eliminarplaylist a:hover {
+        transition: transform .2s;
+        background-color: #00296b;
+        transform: scale(1.02);
+        
+    }
+    #currentTime{
+        position: fixed;
+        bottom: 100px;
+        left: 15px;
+    }
+    #totalTime{
+        position: fixed;
+        bottom: 100px;
+        right: 15px;
+    }
+    .song-image {
+        width: 50px; 
+        height: 50px;
+        object-fit: cover; 
+        padding-bottom: 5px;
+    }
+    
 }
 
 

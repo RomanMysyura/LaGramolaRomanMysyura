@@ -18,7 +18,6 @@ if ($songid == -1) {
 
 
 
-
 ?>
 <!DOCTYPE html>
 <html lang="ca">
@@ -60,36 +59,46 @@ if (isset($_SESSION["usuari"])) {
     <label for="nom_playlist" id="titolcrearplaylist">Nom de la playlist:</label>
     <input id="nom_playlist" type="text" name="nom_playlist" required>
         <br><br>
+        <div class="divMostrarcançons">
+        <details>
+            <summary><h3>Clica per afegir les cançons</h3></summary>
 
-    <label id="triarlescancons">Tria les cançons:</label>
-        <br><br>
-
-    <?php
+            <?php
         $songs = json_decode(file_get_contents("songs.json"), true);
             foreach ($songs as $song) {
-                echo "<input type='checkbox' name='cancons[]' value='{$song['num']}'> {$song['arists']} - {$song['title']}<br>";
+                echo "<input type='checkbox' name='cancons[]' value='{$song['num']}'>  {$song['title']}<br>";
         }
     ?>
 
-    <br>
+        </details>
+        </div>
+    
+
+        <br>
     <input id="enviarplaylist" type="submit" value="Enviar">
 </form>
 </div>
 
+
+
 <div class="divCreacioPlayist">
-<form action="guardar_playlist.php" method="post" id="formulariplaylists">
-    <label for="nom_playlist" id="titolcrearplaylist">Eliminar la playlist:</label>
+    <br>
+    <label for="nom_playlist" id="titoleliminarplaylist">Eliminar la playlist:</label>
+    <br><br>
 
-    <label id="triarlescancons">Tria la playlist:</label>
-        <br><br>
 
+        
     <?php
-      
+        $playlists = json_decode(file_get_contents("playlists.json"), true);
+            foreach ($playlists as $playlist) {
+        echo "
+            <div id='eliminarplaylist'>{$playlist['name']} 
+                <a href='eliminar_playlist.php?id={$playlist['id']}'>Eliminar</a>
+            </div>";
+        }
     ?>
 
     <br>
-    <input id="enviarplaylist" type="submit" value="Eliminar">
-</form>
 </div>
 
 

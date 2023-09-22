@@ -40,9 +40,35 @@
     "arists": "Justin Bieber",
     "title": "Justin Bieber, Kehlani - Get Me", 
     "url": "songs/justin-bieber_-_get-me.mp3",
-    "image": "images/song6.png"}
+    "image": "images/song6.png"},
 
-    
+    { 
+    "num": 7,
+    "arists": "Coldplay",
+    "title": "Coldplay - Hymn For The Weekend", 
+    "url": "songs/coldplay_-_hymn-for-the-weekend.mp3",
+    "image": "images/song7.png"},
+
+    { 
+    "num": 8,
+    "arists": "Lil Peep",
+    "title": "Lil Peep - Hate Me", 
+    "url": "songs/lil-peep_-_hate-me.mp3",
+    "image": "images/song8.png"},
+
+    { 
+    "num": 8,
+    "arists": "Lil Peep",
+    "title": "Lil Peep - Falling Down", 
+    "url": "songs/lil-peep_-_falling-down.mp3",
+    "image": "images/song9.png"}
+
+
+
+
+
+
+
     
 
 ]

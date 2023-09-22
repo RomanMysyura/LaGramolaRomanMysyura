@@ -1,3 +1,4 @@
+
 function nextSong(songid) {
     window.location.href = window.location.origin + "/index.php?songid=" + (parseInt(songid) + 1);
 
@@ -55,10 +56,11 @@ function carregarPlaylists(playlists, songs) {
         playlist.songs.forEach(songid => {
             divSongs += `
                 <div class="song">
-                <a class="botocanco" onclick="triarcanco(${songid})">   
-                ${songs[songid].num} - 
-                ${songs[songid].title}
-                </a>
+                    <img src="${songs[songid].image}" alt="${songs[songid].title}" class="song-image">
+                
+                    <a class="botocanco" onclick="triarcanco(${songid})">   
+                        ${songs[songid].num} - ${songs[songid].title}
+                    </a>
                 </div>
             `;
         })
@@ -126,6 +128,8 @@ function stopSong() {
 const cancion = document.getElementById('player');
 const progreso = document.querySelector('.progreso');
 
+
+
 cancion.addEventListener('timeupdate', function() {
     // Calcular el porcentaje de progreso de la canción
     let porcentaje = (cancion.currentTime / cancion.duration) * 100;
@@ -143,4 +147,34 @@ progreso.addEventListener("input", function () {
 // Asegúrate de que el rango máximo del input sea igual a la duración de la canción
 cancion.addEventListener('loadedmetadata', function() {
     progreso.max = cancion.duration;
+});
+
+
+
+function formatTime(seconds) {
+    let minutes = Math.floor(seconds / 60);
+    seconds = Math.floor(seconds) % 60;
+    return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+}
+
+
+const currentTimeElement = document.getElementById('currentTime');
+const totalTimeElement = document.getElementById('totalTime');
+
+cancion.addEventListener('timeupdate', function() {
+    // Calcular el porcentaje de progreso de la canción
+    let porcentaje = (cancion.currentTime / cancion.duration) * 100;
+    
+    // Actualizar el valor del input
+    progreso.value = porcentaje;
+
+    // Actualizar el tiempo actual en el reproductor
+    currentTimeElement.textContent = formatTime(cancion.currentTime);
+});
+
+cancion.addEventListener('loadedmetadata', function() {
+    progreso.max = cancion.duration;
+    
+    // Actualizar el tiempo total en el reproductor
+    totalTimeElement.textContent = formatTime(cancion.duration);
 });

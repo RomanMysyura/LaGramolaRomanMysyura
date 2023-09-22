@@ -23,9 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     file_put_contents("playlists.json", json_encode($playlists));
 
     header("Location: index.php");
-exit;
+    exit;
 }
 ?>
 
 
-<li><a href="index.php">TORNAR</a></li>
+

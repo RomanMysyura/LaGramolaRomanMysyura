@@ -20,6 +20,9 @@ if ($songid == -1) {
 
 
 ?>
+
+
+                
 <!DOCTYPE html>
 <html lang="ca">
 <head>
@@ -88,11 +91,11 @@ if (isset($_SESSION["usuari"])) {
         </div>
 
         <div class="controls-box">
-            <button onclick="previousSong('<?= $songid ?>')"><img src="images/rebobinar.svg"></button>
-            <button onclick="stopSong()"><img src="images/detengase.svg"></button>
-            <button class="botoprincipal" onclick="playPause()"><img src="images/tocar.svg"></button>
-            <button onclick="nextSong('<?= $songid ?>')"><img src="images/delantero.svg"></button>
-            <button onclick="randomSong('<?= count($songs)?>', '<?=$songid?>')"><img src="images/barajar.svg"></button>
+            <button onclick="previousSong('<?= $songid ?>')"><img class="bcntrl" src="images/rebobinar.svg"></button>
+            <button onclick="stopSong()"><img class="bcntrl" src="images/detengase.svg"></button>
+            <button class="botoprincipal" onclick="playPause()"><img class="bcntrl" src="images/tocar.svg"></button>
+            <button onclick="nextSong('<?= $songid ?>')"><img class="bcntrl" src="images/delantero.svg"></button>
+            <button onclick="randomSong('<?= count($songs)?>', '<?=$songid?>')"><img class="bcntrl" src="images/barajar.svg"></button>
             
         </div>
 
@@ -101,7 +104,7 @@ if (isset($_SESSION["usuari"])) {
         <input class="progreso" type="range" min="0" value="0" max="100">
         <input class="volum" type="range">
         <div class="status-box">
-
+        <span id="currentTime">00:00</span>  <span id="totalTime">00:00</span>
         </div>
 
     </div>
