@@ -673,7 +673,7 @@ p{
         font-family: 'Arial', sans-serif;
         margin: 0px;
         padding: 0px;
-        background-color: #72bac9;
+        background-color: #627e82;
         border: 0px;
     }
     .nomsong{
@@ -687,17 +687,100 @@ p{
    
     .iconasong{
         width: 100%;
-        max-width: 250px;
+        max-width: 350px;
         height: auto;
-        border-radius: 5px;
+        border-radius: 50%;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
         position: fixed;
-        bottom: 150px;
-        left: 43.5%;
-        transition: transform .2s;
+        bottom: 25%;
+        left: 61%;
+    } 
+
+    @keyframes rotateInfinitely {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
+    .iconasong-rotating {
+        animation: rotateInfinitely 4s linear infinite;
+    }
+
+
+    #IDequalizer{
+        height: 50px;
+        width: 100px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: fixed;
+        left: 1%;
+        bottom: 20px;
+        
+    }
+   
+    #IDequalizer1, 
+    #IDequalizer2, 
+    #IDequalizer3, 
+    #IDequalizer4, 
+    #IDequalizer5, 
+    #IDequalizer6, 
+    #IDequalizer7, 
+    #IDequalizer8, 
+    #IDequalizer9, 
+    #IDequalizer10
+     {
+        background-color: aliceblue;
+        width: 6px;
+        height: 11px;
+        margin: 1px;
     
 
+    }
+
+
+    @keyframes IDequalizer5Infinitely {
+        0%, 100% {
+         height: 17px;
+        }
+        25%{
+            height: 7px;
+        }
+        50% {
+            height: 27px;
+        }
+        
+    }
+    .IDequalizer1Rotating {
+        animation: IDequalizer5Infinitely 0.5s linear infinite;
+    }
+    .IDequalizer2Rotating {
+        animation: IDequalizer5Infinitely 0.7s linear infinite;
+    }
+    .IDequalizer3Rotating {
+        animation: IDequalizer5Infinitely 0.9s linear infinite;
+    }
+    .IDequalizer4Rotating {
+        animation: IDequalizer5Infinitely 0.4s linear infinite;
+    }
+    .IDequalizer5Rotating {
+        animation: IDequalizer5Infinitely 0.8s linear infinite;
+    }
+    .IDequalizer6Rotating {
+        animation: IDequalizer5Infinitely 0.2s linear infinite;
+    }
+    .IDequalizer7Rotating {
+        animation: IDequalizer5Infinitely 0.5s linear infinite;
+    }
+    .IDequalizer8Rotating {
+        animation: IDequalizer5Infinitely 0.4s linear infinite;
+    }
+    
+    
+    
     .logosong {
         display: flex;
         justify-content: center;  
@@ -759,6 +842,7 @@ p{
         transform: scale(1.3);
     }
 
+
     .volum{
         display: flex;
         justify-content: right;
@@ -817,7 +901,6 @@ p{
       
     }
      
-    
 
     .playlist {
         transition: 0.2s ease;
@@ -900,10 +983,23 @@ p{
       
     .musica{
         width: 40%;
-        
-        height: 10px;
-        
+        height: 370px;
+        overflow-y: scroll; /* Desplazamiento vertical */
+        padding: 10px; 
         }
+
+        .musica::-webkit-scrollbar {
+            width: 8px;
+        }
+        .musica::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            border-radius: 4px;
+        }
+        .musica::-webkit-scrollbar-track {
+            background-color: lightgrey;
+        }
+
+
     .nomusuari{
         position: fixed;
         top: 15px;
@@ -938,7 +1034,7 @@ p{
 
    
     /* -- Estils per la pagina crearplaylist.php -- */
-    .divCreacioPlayist{
+    .divCreacioPlayist,.DivUltimaPlaylist{
         background-color: #8b939d;
         align-content: center;
         width: 580px;
@@ -980,7 +1076,7 @@ p{
         cursor: pointer;
         box-shadow: 1px 1px 1px black;
     }
-    #enviarplaylist:hover{
+    #enviarplaylist:hover , a.lastplay:hover{
         transition: transform .2s;
         background-color: #00296b;
         transform: scale(1.02);
@@ -1039,6 +1135,23 @@ p{
         object-fit: cover; 
         padding-bottom: 5px;
     }
+    .ultimaPlaylist{
+        padding: 10px;
+    }
+    li {
+        list-style-type: none;
+        margin-right: 15px;
+    }
+    a.lastplay {
+        color: rgb(255, 255, 255);
+        width: 100%;
+        margin-bottom: 8px;
+        background-color: #00296b;
+        
+        
+    }
+
+    
     
 }
 
