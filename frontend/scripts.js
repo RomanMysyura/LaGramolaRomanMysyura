@@ -234,6 +234,7 @@ const progreso = document.querySelector('.progreso');
 
 
 cancion.addEventListener('timeupdate', function() {
+
     // Calcular el porcentaje de progreso de la canción
     let porcentaje = (cancion.currentTime / cancion.duration) * 100;
     
@@ -281,3 +282,4 @@ cancion.addEventListener('loadedmetadata', function() {
     // Actualizar el tiempo total en el reproductor
     totalTimeElement.textContent = formatTime(cancion.duration);
 });
+
