@@ -97,20 +97,12 @@ let isAudioLoaded = false;
 
 
 function playPause() {
-    // Log current song
-    console.log(currentSong);
 
-    fetch("sumaraudio.php", {
-        method: "POST",
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            songid: currentSong
-        })
-    })
-        .then(res => res.text())
-        .then(res => console.log(res));
+
+
+
+
+
 
 
     let playImage = "images/tocar.svg";
@@ -144,10 +136,36 @@ function playPause() {
     IDequalizer8.classList.add('IDequalizer8Rotating');
 
     if (audioElement.paused) {
+
+        // Cada cop que cliquem el boto Play, fara que s'incrementa el valor "reproduccions" en el arxiu songs.json
+        fetch('updateSong.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `currentSong=${currentSong}`, // Envía el valor de currentSong al archivo PHP
+        })
+            .then(response => response.text())
+            .then(data => {
+                // Aquí puedes manejar la respuesta del servidor si es necesario
+
+            })
+            .catch((error) => {
+                console.error('Error, no sha guardat la reproducció:', error);
+            });
+
+
+
+
+
         if (!isAudioLoaded) {
             audioElement.setAttribute('src', songs[currentSong].url);
             isAudioLoaded = true;
+
         }
+
+
+
         audioElement.play();
 
         bcntrlbefore.style.opacity = '0.4';
@@ -161,8 +179,8 @@ function playPause() {
 
         cancion.addEventListener("loadedmetadata", () => {
             const divElement = document.getElementById("myDiv");
-    
-    // Aquí obtienes específicamente el width del elemento con id "myDiv"
+
+            // Aquí obtienes específicamente el width del elemento con id "myDiv"
             const divWidth = parseInt(getComputedStyle(divElement).width);
             const pxPerS = divWidth / cancion.duration;
 
@@ -175,27 +193,23 @@ function playPause() {
 
                     currentTimeElement.textContent = formatTime(cancion.currentTime);
 
-                    // console.log(cancion.duration);
-
-                    // let duracionCancionMinutos = cancion.duration;
-                    // let duracionCancionMs = duracionCancionMinutos * 1000; // Convertir a milisegundos
-
-
-
-                    // console.log(duracionCancionMs);
-
-                    // let msperpixel = 
-
                     const divElement = document.getElementById("myDiv");
 
                     // Obtener el padding-right actual y convertirlo a un número entero
-                    // let currentPaddingRight = parseInt(getComputedStyle(divElement).paddingRight);
 
                     console.log(cancion.currentTime * pxPerS)
                     divElement.style.width = (cancion.currentTime * pxPerS) + "px";
                 }, 0);
 
         })
+
+
+
+
+
+
+
+
 
     } else {
         playing = false;
@@ -285,22 +299,6 @@ function formatTime(seconds) {
 const currentTimeElement = document.getElementById('currentTime');
 const totalTimeElement = document.getElementById('totalTime');
 
-
-
-// cancion.addEventListener('timeupdate', function () {
-
-//     // Calcular el porcentaje de progreso de la canción
-//     let porcentaje = (cancion.currentTime / cancion.duration) * 1000;
-//     console.log(porcentaje);
-//     console.log(cancion.duration);
-//     console.log(cancion.currentTime);
-
-//     // Actualizar el valor del input
-//     progreso.value = porcentaje;
-
-//     // Actualizar el tiempo actual en el reproductor
-//     currentTimeElement.textContent = formatTime(cancion.currentTime);
-// });
 
 cancion.addEventListener('loadedmetadata', function () {
     progreso.max = cancion.duration;

@@ -64,21 +64,19 @@ if(isset($_COOKIE["ultimaPlaylist"])&&($_COOKIE["DataDeLaUltimaPlaylist"])) {
 
 <div class="DivUltimaPlaylist"> 
 <h3 class='ultimaPlaylist'> Top cançons:</h3>
-<?php 
 
+<?php
+        $songs = json_decode(file_get_contents("songs.json"), true);
 
-
-
-
-// if(isset($_COOKIE["reproduccions"])) {
-    
-//     echo "<h3 class='ultimaPlaylist'>", $_COOKIE["reproduccions"],"<br>","</a></li>" ,"</h3>";
-
-// }
+        usort($songs, function($a, $b) {
+            // Si quieres ordenar de mayor a menor usamos $b contra $a
+            return $b['reproduccions'] - $a['reproduccions'];
+        });
+            foreach ($songs as $song) {
+               
+                echo "<b>",$song['reproduccions']," - " , $song['title'] ,'<br>';
+        }
 ?>
-
-
-
 
 
 

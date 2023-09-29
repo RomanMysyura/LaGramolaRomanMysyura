@@ -38,6 +38,8 @@ if(isset($songid)) {
         setcookie("DataDeLaUltimaPlaylist", $dataDeLaPlaylist, time() + 3600, "/");
 
     }
+
+	
 }
 
 ?>
@@ -61,6 +63,12 @@ if(isset($songid)) {
 				<li><a href="crearplaylist.php">Crear Playlist</a></li>
 			</ul>
 		</nav>
+		
+
+
+		
+		
+
 
 		<form class="nomusuari" name="formulario" method="post">
 			Nom: <input class="textnom" type="text" name="nom" value="">
@@ -131,9 +139,7 @@ if(isset($songid)) {
 			<div id="myDivBackground"></div>
 			<div id="myDiv"></div>
 			
-			<div class="topsongs">
-
-			</div>
+			
 
 	</body>
 	</html>
