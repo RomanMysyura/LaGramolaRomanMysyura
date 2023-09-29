@@ -70,11 +70,11 @@ if(isset($_COOKIE["ultimaPlaylist"])&&($_COOKIE["DataDeLaUltimaPlaylist"])) {
 
 
 
-if(isset($_COOKIE["reproduccions"])) {
+// if(isset($_COOKIE["reproduccions"])) {
     
-    echo "<h3 class='ultimaPlaylist'>", $_COOKIE["reproduccions"],"<br>","</a></li>" ,"</h3>";
+//     echo "<h3 class='ultimaPlaylist'>", $_COOKIE["reproduccions"],"<br>","</a></li>" ,"</h3>";
 
-}
+// }
 ?>
 
 

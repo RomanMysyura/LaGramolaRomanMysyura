@@ -9,19 +9,11 @@ function previousSong(songid) {
 }
 
 
-
-
-function triarcanco(songid){
+function triarcanco(songid) {
     console.log(songid)
     window.location.href = window.location.origin = "/index.php?songid=" + songid;
 
-    
-
-
 }
-
-
-
 
 
 function randomSong(idmax, songid) {
@@ -35,11 +27,6 @@ function randomSong(idmax, songid) {
     //  Canvia al seguent valor que es random
     window.location.href = window.location.origin + "/index.php?songid=" + random;
 }
-
-
-
-
-
 
 fetch("playlists.json")
     .then(resposta => resposta.json())
@@ -84,10 +71,6 @@ function carregarPlaylists(playlists, songs) {
     });
 }
 
-
-
-
-
 let audioElement = document.getElementById('player');
 let queryString = window.location.search;
 
@@ -99,14 +82,7 @@ let currentSong = urlParams.get('songid');
 // Convertirlo a número (si sabes que siempre será un número)
 currentSong = Number(currentSong);
 
-console.log(currentSong); // Esto mostrará 0, 3
-
-
-
-let songs = []; 
-
-
-
+let songs = [];
 
 // Cargar canciones desde songs.json
 fetch('songs.json')
@@ -115,88 +91,146 @@ fetch('songs.json')
         songs = data;
     });
 
-    function playPause() {
-        
-        // Log current song
-        console.log(currentSong);
-        
-        fetch("sumaraudio.php", {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                songid: currentSong
-            })
+
+// Crear una variable para rastrear si el audio ya está cargado o no.
+let isAudioLoaded = false;
+
+
+function playPause() {
+    // Log current song
+    console.log(currentSong);
+
+    fetch("sumaraudio.php", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            songid: currentSong
         })
+    })
         .then(res => res.text())
         .then(res => console.log(res));
 
 
-        let playImage = "images/tocar.svg";
-        let pauseImage = "images/pausa.svg";
-        let bcntrlplayImg = document.getElementById("bcntrlplay");
+    let playImage = "images/tocar.svg";
+    let pauseImage = "images/pausa.svg";
+    let bcntrlplayImg = document.getElementById("bcntrlplay");
 
-        var bcntrlbefore = document.getElementById('bcntrlbefore');
-        var bcntrlrandom = document.getElementById('bcntrlrandom');
-        var bcntrlnext = document.getElementById('bcntrlnext');
+    var bcntrlbefore = document.getElementById('bcntrlbefore');
+    var bcntrlrandom = document.getElementById('bcntrlrandom');
+    var bcntrlnext = document.getElementById('bcntrlnext');
 
-        var rotateiconasong = document.getElementById('rotateiconasong');
-        rotateiconasong.classList.add('iconasong-rotating');
+    var rotateiconasong = document.getElementById('rotateiconasong');
+    rotateiconasong.classList.add('iconasong-rotating');
 
-        var IDequalizer1 = document.getElementById('IDequalizer1');
-        var IDequalizer2 = document.getElementById('IDequalizer2');
-        var IDequalizer3 = document.getElementById('IDequalizer3');
-        var IDequalizer4 = document.getElementById('IDequalizer4');
-        var IDequalizer5 = document.getElementById('IDequalizer5');
-        var IDequalizer6 = document.getElementById('IDequalizer6');
-        var IDequalizer7 = document.getElementById('IDequalizer7');
-        var IDequalizer8 = document.getElementById('IDequalizer8');
-        
+    var IDequalizer1 = document.getElementById('IDequalizer1');
+    var IDequalizer2 = document.getElementById('IDequalizer2');
+    var IDequalizer3 = document.getElementById('IDequalizer3');
+    var IDequalizer4 = document.getElementById('IDequalizer4');
+    var IDequalizer5 = document.getElementById('IDequalizer5');
+    var IDequalizer6 = document.getElementById('IDequalizer6');
+    var IDequalizer7 = document.getElementById('IDequalizer7');
+    var IDequalizer8 = document.getElementById('IDequalizer8');
 
-        IDequalizer1.classList.add('IDequalizer1Rotating');
-        IDequalizer2.classList.add('IDequalizer2Rotating');
-        IDequalizer3.classList.add('IDequalizer3Rotating');
-        IDequalizer4.classList.add('IDequalizer4Rotating');
-        IDequalizer5.classList.add('IDequalizer5Rotating');
-        IDequalizer6.classList.add('IDequalizer6Rotating');
-        IDequalizer7.classList.add('IDequalizer7Rotating');
-        IDequalizer8.classList.add('IDequalizer8Rotating');
 
-        if (audioElement.paused) {
+    IDequalizer1.classList.add('IDequalizer1Rotating');
+    IDequalizer2.classList.add('IDequalizer2Rotating');
+    IDequalizer3.classList.add('IDequalizer3Rotating');
+    IDequalizer4.classList.add('IDequalizer4Rotating');
+    IDequalizer5.classList.add('IDequalizer5Rotating');
+    IDequalizer6.classList.add('IDequalizer6Rotating');
+    IDequalizer7.classList.add('IDequalizer7Rotating');
+    IDequalizer8.classList.add('IDequalizer8Rotating');
+
+    if (audioElement.paused) {
+        if (!isAudioLoaded) {
             audioElement.setAttribute('src', songs[currentSong].url);
-            audioElement.play();
-
-            bcntrlbefore.style.opacity = '0.4';
-            bcntrlrandom.style.opacity = '0.4';
-            bcntrlnext.style.opacity = '0.4';
-            
-            // Change the button image to 'detengase.svg' when playing
-            bcntrlplayImg.setAttribute('src', pauseImage);
-        } else {
-            audioElement.pause();
-            
-            // Change the button image back to 'tocar.svg' when paused
-            bcntrlplayImg.setAttribute('src', playImage);
-            bcntrlbefore.style.opacity = '1';
-            bcntrlrandom.style.opacity = '1';
-            bcntrlnext.style.opacity = '1';
-
-            rotateiconasong.classList.remove('iconasong-rotating');
-
-            IDequalizer1.classList.remove('IDequalizer1Rotating');
-            IDequalizer2.classList.remove('IDequalizer2Rotating');
-            IDequalizer3.classList.remove('IDequalizer3Rotating');
-            IDequalizer4.classList.remove('IDequalizer4Rotating');
-            IDequalizer5.classList.remove('IDequalizer5Rotating');
-            IDequalizer6.classList.remove('IDequalizer6Rotating');
-            IDequalizer7.classList.remove('IDequalizer7Rotating');
-            IDequalizer8.classList.remove('IDequalizer8Rotating');
-
+            isAudioLoaded = true;
         }
-        
-    }
+        audioElement.play();
+
+        bcntrlbefore.style.opacity = '0.4';
+        bcntrlrandom.style.opacity = '0.4';
+        bcntrlnext.style.opacity = '0.4';
+
+        // Change the button image to 'detengase.svg' when playing
+        bcntrlplayImg.setAttribute('src', pauseImage);
+
+
+
+        cancion.addEventListener("loadedmetadata", () => {
+            const divElement = document.getElementById("myDiv");
     
+    // Aquí obtienes específicamente el width del elemento con id "myDiv"
+            const divWidth = parseInt(getComputedStyle(divElement).width);
+            const pxPerS = divWidth / cancion.duration;
+
+            setInterval(
+                function () {
+                    let porcentaje = (cancion.currentTime / cancion.duration) * 100;
+
+                    // // Actualizar el valor del input
+                    progreso.value = porcentaje;
+
+                    currentTimeElement.textContent = formatTime(cancion.currentTime);
+
+                    // console.log(cancion.duration);
+
+                    // let duracionCancionMinutos = cancion.duration;
+                    // let duracionCancionMs = duracionCancionMinutos * 1000; // Convertir a milisegundos
+
+
+
+                    // console.log(duracionCancionMs);
+
+                    // let msperpixel = 
+
+                    const divElement = document.getElementById("myDiv");
+
+                    // Obtener el padding-right actual y convertirlo a un número entero
+                    // let currentPaddingRight = parseInt(getComputedStyle(divElement).paddingRight);
+
+                    console.log(cancion.currentTime * pxPerS)
+                    divElement.style.width = (cancion.currentTime * pxPerS) + "px";
+                }, 0);
+
+        })
+
+    } else {
+        playing = false;
+        audioElement.pause();
+
+        // Change the button image back to 'tocar.svg' when paused
+        bcntrlplayImg.setAttribute('src', playImage);
+        bcntrlbefore.style.opacity = '1';
+        bcntrlrandom.style.opacity = '1';
+        bcntrlnext.style.opacity = '1';
+
+        rotateiconasong.classList.remove('iconasong-rotating');
+
+        IDequalizer1.classList.remove('IDequalizer1Rotating');
+        IDequalizer2.classList.remove('IDequalizer2Rotating');
+        IDequalizer3.classList.remove('IDequalizer3Rotating');
+        IDequalizer4.classList.remove('IDequalizer4Rotating');
+        IDequalizer5.classList.remove('IDequalizer5Rotating');
+        IDequalizer6.classList.remove('IDequalizer6Rotating');
+        IDequalizer7.classList.remove('IDequalizer7Rotating');
+        IDequalizer8.classList.remove('IDequalizer8Rotating');
+
+
+
+
+    }
+
+}
+
+
+
+
+
+
+
 function stopSong() {
     audioElement.pause();
     audioElement.currentTime = 0; // Fa reset a la posició de la cancó
@@ -214,7 +248,7 @@ function stopSong() {
 
     var rotateiconasong = document.getElementById('rotateiconasong');
     rotateiconasong.classList.remove('iconasong-rotating');
-    
+
 
     IDequalizer1.classList.remove('IDequalizer1Rotating');
     IDequalizer2.classList.remove('IDequalizer2Rotating');
@@ -225,31 +259,17 @@ function stopSong() {
     IDequalizer7.classList.remove('IDequalizer7Rotating');
     IDequalizer8.classList.remove('IDequalizer8Rotating');
 
+
 }
+
+
 
 
 const cancion = document.getElementById('player');
 const progreso = document.querySelector('.progreso');
 
-
-
-cancion.addEventListener('timeupdate', function() {
-
-    // Calcular el porcentaje de progreso de la canción
-    let porcentaje = (cancion.currentTime / cancion.duration) * 100;
-    
-    
-    // Actualizar el valor del input
-    progreso.value = porcentaje;
-});
-
-progreso.addEventListener("input", function () {
-    cancion.currentTime = progreso.value / 100 * cancion.duration;
-});
-
-
 // Asegúrate de que el rango máximo del input sea igual a la duración de la canción
-cancion.addEventListener('loadedmetadata', function() {
+cancion.addEventListener('loadedmetadata', function () {
     progreso.max = cancion.duration;
 });
 
@@ -265,21 +285,28 @@ function formatTime(seconds) {
 const currentTimeElement = document.getElementById('currentTime');
 const totalTimeElement = document.getElementById('totalTime');
 
-cancion.addEventListener('timeupdate', function() {
-    // Calcular el porcentaje de progreso de la canción
-    let porcentaje = (cancion.currentTime / cancion.duration) * 100;
-    
-    // Actualizar el valor del input
-    progreso.value = porcentaje;
 
-    // Actualizar el tiempo actual en el reproductor
-    currentTimeElement.textContent = formatTime(cancion.currentTime);
-});
 
-cancion.addEventListener('loadedmetadata', function() {
+// cancion.addEventListener('timeupdate', function () {
+
+//     // Calcular el porcentaje de progreso de la canción
+//     let porcentaje = (cancion.currentTime / cancion.duration) * 1000;
+//     console.log(porcentaje);
+//     console.log(cancion.duration);
+//     console.log(cancion.currentTime);
+
+//     // Actualizar el valor del input
+//     progreso.value = porcentaje;
+
+//     // Actualizar el tiempo actual en el reproductor
+//     currentTimeElement.textContent = formatTime(cancion.currentTime);
+// });
+
+cancion.addEventListener('loadedmetadata', function () {
     progreso.max = cancion.duration;
-    
+
     // Actualizar el tiempo total en el reproductor
     totalTimeElement.textContent = formatTime(cancion.duration);
 });
+
 

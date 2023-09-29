@@ -696,7 +696,7 @@ p{
         bottom: 25%;
         left: 61%;
         border: 3px solid #000000;
-    } 
+    }
 
     @keyframes rotateInfinitely {
         0% {
@@ -719,8 +719,8 @@ p{
         justify-content: center;
         align-items: flex-end;
         position: fixed;
-        left: 1%;
-        bottom: 20px;
+        left: 2.3%;
+        bottom: 40px;
         
     }
    
@@ -735,7 +735,7 @@ p{
     #IDequalizer9, 
     #IDequalizer10
      {
-        background-color: aliceblue;
+        background-color: rgb(255, 255, 255);
         width: 6px;
         height: 11px;
         margin: 1px;
@@ -813,7 +813,7 @@ p{
     }
 
     .controls-box{
-        background-color: #0d0f12;
+        background-color: #000000;
         border-radius: 4px;
         position: fixed;
         bottom: 0px;
@@ -822,6 +822,8 @@ p{
         justify-content: center;
         padding: 15px;
         gap: 20px;
+        height: 44px;
+        
     }
 
     
@@ -833,7 +835,7 @@ p{
     }
     .controls-box button{
         padding: 5px;
-        background-color: #0d0f12;
+        background-color: #000000;
         border: none;
         border-radius: 8px;
         transition: transform .2s;
@@ -851,13 +853,13 @@ p{
         display: flex;
         justify-content: right;
         position: fixed;
-        bottom: 30px;
+        bottom: 66px;
         right: 30px;
         width: 10%;
+        border-radius: 0px;
         appearance: none;
         outline: none;
         height: 5px;
-        border-radius: 0.5vmin;
         background-color: #0077ff;
     }
     .volum:hover{
@@ -873,13 +875,14 @@ p{
         justify-content: center;
         position: fixed;
         bottom: 66px;
-        width: 100%;
+        width: 70%;
         border-radius: 0px;
         appearance: none;
         outline: none;
-        height: 5px;
+        height: 2px;
         background-color: #0077ff;
         transition: value 0.2s linear; 
+        
        
     }
     .progreso:hover{
@@ -893,9 +896,13 @@ p{
     input::-webkit-slider-thumb {
         cursor: pointer;
         
-        width: 9px;
-        height: 9px;
-        background: white;
+        width: 4px;
+        
+        border-radius: 0px;
+        appearance: none;
+        outline: none;
+        height: 5px;
+        background: rgb(255, 255, 255);
         
       }
       
@@ -1127,14 +1134,14 @@ p{
     }
     #currentTime{
         position: fixed;
-        bottom: 88px;
-        left: 15px;
+        bottom: 40px;
+        left: 15%;
         color: #ffffff;
     }
     #totalTime{
         position: fixed;
-        bottom: 88px;
-        right: 15px;
+        bottom: 40px;
+        right: 15%;
         color: #ffffff;
     }
     .song-image {
@@ -1159,10 +1166,21 @@ p{
     a.lastplay:hover {
         background-color: #56595d;
     }
+    #myDiv, #myDivBackground {
+        width: 70%;
+        margin-left: 15%;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 66px;
+        border-radius: 0px;
+        height: 8px;
+        background-color: #0077ff;
 
-
-    
-    
+    }
+    #myDivBackground {
+        background-color: #ffffff;
+    }
 }
 
 

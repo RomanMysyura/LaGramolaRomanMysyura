@@ -81,7 +81,7 @@ if(isset($songid)) {
 
 			<div class="fondotext">
 				<h1 class="titol">Playlists</h1></div>
-
+				
 			<div class="reproductor">
 
 				<div class="art-box">
@@ -89,6 +89,7 @@ if(isset($songid)) {
                 
 
 						<img src='<?= $songs[$songid]->image ?>' id="rotateiconasong" class="iconasong" alt="Logo de la cancó" width="300" height="200">
+
 
 					</div>
 					<h3 id="idnomsong" class="nomsong"><?= $songs[$songid]->title ?></h3>
@@ -102,8 +103,9 @@ if(isset($songid)) {
 					<button onclick="randomSong('<?= count($songs)?>', '<?=$songid?>')"><img id="bcntrlrandom" src="images/barajar.svg"></button>
 
 				</div>
+				
+				<input class="progreso" type="range" min="0" value="0" max=100>
 
-				<input class="progreso" type="range" min="0" value="0" max="100">
 				<input class="volum" type="range">
 				<div class="status-box">
 					<span id="currentTime">00:00</span> <span id="totalTime">00:00</span>
@@ -126,7 +128,9 @@ if(isset($songid)) {
 				<div id="IDequalizer7"></div>
 				<div id="IDequalizer8"></div>
 			</div>
-
+			<div id="myDivBackground"></div>
+			<div id="myDiv"></div>
+			
 			<div class="topsongs">
 
 			</div>
