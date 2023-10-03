@@ -1,15 +1,14 @@
 /* Diseny per MOVIL */
-
 .menu{
     padding: 0px;
     margin: 0px;
-    background-color: #00296b;
+    background-color: #0d0f12;
     font-weight: bold;
 }
 .fondotext{
     margin: 0px;
     padding: 10px;
-    background-color: #00509d;
+    background-color: #31353b;
 }
 .titol{
     margin: 0px;
@@ -41,7 +40,7 @@ ul{
      color: rgb(255, 255, 255);
      text-decoration: none;
      padding: 10px 10px;
-     background-color: #003f88;
+     background-color: #0077ff;
      width: 150px;
      display: block;
      text-align: center;
@@ -51,7 +50,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0px;
     padding: 0px;
-    background-color: #72bac9;
+    background-color: #d3d3d3;
     border: 0px;
 }
 .nomsong{
@@ -59,20 +58,106 @@ body {
     text-align: center;
     text-shadow: 1px 1px 2px rgb(118, 110, 110);
     font-size: 20px;
-    color: #000000;
+    color: #ffffff;
+    margin: 10px;
 }
 
 
 .iconasong{
-    width: 100%;
-    max-width: 250px;
+    width: 50%;
+    max-width: 150px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 50%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     position: fixed;
-    bottom: 150px;
-    left: 43%;
+    bottom: 140px;
+    left: 38%;
+    border: 3px solid #000000;
 }
+
+@keyframes rotateInfinitely {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.iconasong-rotating {
+    animation: rotateInfinitely 4s linear infinite;
+}
+
+
+#IDequalizer{
+    height: 50px;
+    width: 100px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    left: 1px;
+    bottom: 140px;
+    
+}
+
+#IDequalizer1, 
+#IDequalizer2, 
+#IDequalizer3, 
+#IDequalizer4, 
+#IDequalizer5, 
+#IDequalizer6, 
+#IDequalizer7, 
+#IDequalizer8, 
+#IDequalizer9, 
+#IDequalizer10
+ {
+    background-color: rgb(255, 255, 255);
+    width: 6px;
+    height: 11px;
+    margin: 1px;
+
+
+}
+
+
+@keyframes IDequalizer5Infinitely {
+    0%, 100% {
+     height: 17px;
+    }
+    25%{
+        height: 7px;
+    }
+    50% {
+        height: 27px;
+    }
+    
+}
+.IDequalizer1Rotating {
+    animation: IDequalizer5Infinitely 0.5s linear infinite;
+}
+.IDequalizer2Rotating {
+    animation: IDequalizer5Infinitely 0.7s linear infinite;
+}
+.IDequalizer3Rotating {
+    animation: IDequalizer5Infinitely 0.9s linear infinite;
+}
+.IDequalizer4Rotating {
+    animation: IDequalizer5Infinitely 0.4s linear infinite;
+}
+.IDequalizer5Rotating {
+    animation: IDequalizer5Infinitely 0.8s linear infinite;
+}
+.IDequalizer6Rotating {
+    animation: IDequalizer5Infinitely 0.2s linear infinite;
+}
+.IDequalizer7Rotating {
+    animation: IDequalizer5Infinitely 0.5s linear infinite;
+}
+.IDequalizer8Rotating {
+    animation: IDequalizer5Infinitely 0.4s linear infinite;
+}
+
 
 
 .logosong {
@@ -81,6 +166,7 @@ body {
     align-items: center;     
     height: 100%;            
 }
+
 
 .reproductor {
     display: flex;
@@ -93,9 +179,10 @@ body {
 .art-box {
     margin-top: 10px;
     position: fixed;
-    bottom: 80px;
-    background-color: antiquewhite;
+    bottom: 73px;
+    background-color: #000000;
     width: 100%;
+    box-shadow: 0px -1px 25px rgb(0, 0, 0);
 }
 
 .buttoncontrol:hover{
@@ -103,15 +190,17 @@ body {
 }
 
 .controls-box{
-    background-color: #00296b;
+    background-color: #000000;
     border-radius: 4px;
     position: fixed;
     bottom: 0px;
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
     gap: 20px;
+    height: 44px;
+    
 }
 
 
@@ -123,93 +212,102 @@ body {
 }
 .controls-box button{
     padding: 5px;
-    background-color: #00296b;
+    background-color: #000000;
     border: none;
     border-radius: 8px;
+    transition: transform .2s;
 }
 .controls-box button:hover{
     padding: 5px;
-    background-color: #083a89;
+    background-color: rgb(60, 65, 70);
     border: none;
     cursor: pointer;
-    
+    transform: scale(1.3);
 }
+
 
 .volum{
     display: flex;
     justify-content: right;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 10%;
-    appearance: none;
-    outline: none;
-    height: 7px;
-    border-radius: 0.5vmin;
-    background-color: #5888bf;
-}
-.volum:hover{
-    
-    height: 12px;
-    transition: 0.1s ease;
-    cursor: pointer;
-    background-color: #5888bf;
-}
-.progreso{
-    transition: 0.1s ease;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    bottom: 72px;
-    width: 100%;
+    bottom: 55px;
+    right: 13px;
+    width: 70px;
     border-radius: 0px;
     appearance: none;
     outline: none;
     height: 7px;
-    background-color: #a2bede;
-
+    background-color: #0077ff;
+    transform: rotate(90deg);
+}
+.volum:hover{
     
+    height: 7px;
+    transition: 0.1s ease;
+    cursor: pointer;
+    background-color: #0077ff;
+}
+.progreso{
+
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 66px;
+    width: 40%;
+    border-radius: 0px;
+    appearance: none;
+    outline: none;
+    height: 2px;
+    background-color: #0077ff;
+    transition: value 0.2s linear; 
+    
+   
 }
 .progreso:hover{
     
-    height: 12px;
+    height: 10px;
     transition: 0.1s ease;
     cursor: pointer;
-    background-color: #5888bf;
+    background-color: #0077ff;
 }
+
 input::-webkit-slider-thumb {
     cursor: pointer;
+    
+    width: 4px;
+    
+    border-radius: 0px;
     appearance: none;
-    width: 2vmin;
-    height: 2vmin;
-    background: white;
-    border-radius: 50%;
+    outline: none;
+    height: 5px;
+    background: rgb(255, 255, 255);
+    
   }
   
 
   .playlists {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-   
+    
   
 }
- 
 
+ 
 
 .playlist {
     transition: 0.2s ease;
     border: 1px solid black;
     padding: 10px;
+    padding-left: 13px;
     padding-top: 0px;
     margin: 10px;
+    margin-left: 20px;
     cursor: pointer;
-    background-color: antiquewhite;
+    background-color: #b1aaa3;
     box-shadow: 4px 4px 5px black;
     border-radius: 2px;
     height: 100%;
     padding-bottom: 0px;
     
-
 }
 
 .playlist:hover {
@@ -232,7 +330,9 @@ input::-webkit-slider-thumb {
 .song{
     color: #1b1e21;
     justify-content: left;
-    
+    display: flex;
+    align-items: center;
+    gap: 10px; 
 }
 
 a.botocanco{
@@ -244,11 +344,12 @@ a.botocanco{
     font-weight: bold;
     text-shadow: 0px 0px 0px rgb(0, 0, 0);
     font-size: 15px;
-    
+    margin-bottom: 8px;
+    margin-top: 0px;
     }
 a.botocanco:hover{
     text-decoration: none;
-    background-color: #184c9e;
+    background-color: #b9bfc8;
     width: 100%;
     }
 
@@ -263,63 +364,220 @@ details{
     height: 100%;
     }
  p{
-    height: 100%;
+    height: 10px;
     display: block;
+    font-size: 15px;
+    color: aliceblue;
+    position: fixed;
+    top: -10px;
+    left: 1%;
+    opacity: 0;
     }
   
 .musica{
-    width: 40%;
-    display: inline-block
+    width: 95%;
+    height: 370px;
+    overflow-y: scroll; /* Desplazamiento vertical */
+    padding: 10px; 
     }
-.nomusuari{
-    position: fixed;
-    top: 15px;
-    color: aliceblue;
-    left: 85%;
-}
-p{
-    color: aliceblue;
-    position: fixed;
-    top: 2px;
-    left: 1%;
+
+    .musica::-webkit-scrollbar {
+        width: 8px;
+    }
+    .musica::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        border-radius: 4px;
+    }
+    .musica::-webkit-scrollbar-track {
+        background-color: lightgrey;
+    }
+
+
+    .nomusuari{
+        position: fixed;
+        top: 80px;
+        color: rgb(255, 255, 255);
+        right: 10px;
+    }
+    .textnom {
+        border: none;              
+        outline: none;            
+        padding: 5px 0;         
+        background-color: rgb(200, 199, 203);
+    }
+    .textnom:focus {
+        background-color: #ffffff;
+    }
+    .enviar{
+        padding: 5px 0;            
+        color: white;
+        background-color: #0d0f12;
+        outline: none;    
+        border: none;  
+        width: 50px;
+        border-radius: 5px;
+    }
+    .enviar:hover{
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.1s ease;
+        transform: scale(1.03);
+        background-color: #0077ff;
+    }
+
+
+/* -- Estils per la pagina crearplaylist.php -- */
+.divCreacioPlayist,.DivUltimaPlaylist{
+    background-color: #8b939d;
+    align-content: center;
+    width: 580px;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 3px black;
 }
 
-.textnom{
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px black;
-    background-color: #72bac9;
+#formulariplaylists{
+    align-content: center;
+    margin: 20px;
 }
-.textnom:hover{
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px black;
+#titolcrearplaylist{
+    font-weight: bold;
+    text-align: center;
 }
-.enviar{
-    border-radius: 1px;
-    box-shadow: 1px 1px 1px black;
-    background-color: #72bac9;
+#nom_playlist{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-.enviar:hover{
-    
+#triarlescancons{
+    margin-bottom: 10px;
+}
+#enviarplaylist{
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    border-radius: 1px;
-    box-shadow: 2px 2px 2px black;
-    transition: 0.1s ease;
-    transform: scale(1.03);
-    background-color: #41b0c6;
+    box-shadow: 1px 1px 1px black;
 }
+#enviarplaylist:hover , a.lastplay:hover{
+    transition: transform .2s;
+    background-color: #0062ff;
+    transform: scale(1.02);
+}
+
+
+.divMostrarcançons {
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: #b1aaa3;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 2px;
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-bottom: 10px
+    
+}
+#titoleliminarplaylist{
+    font-weight: bold;
+    padding-left: 15px;
+    
+}
+#eliminarplaylist{
+    padding-top: 5px;
+    display: flex;      
+    align-items: center; 
+    justify-content: space-between;   
+    padding-left: 15px;      
+}
+
+#eliminarplaylist a {
+    margin-top: 0px;
+    background-color: #000000;
+    margin-right: 15px;
+}
+#eliminarplaylist a:hover {
+    transition: transform .2s;
+    background-color: #0062ff;
+    transform: scale(1.02);
+    
+}
+#currentTime{
+    position: fixed;
+    bottom: 40px;
+    left: 10%;
+    color: #ffffff;
+}
+#totalTime{
+    position: fixed;
+    bottom: 40px;
+    right: 15%;
+    color: #ffffff;
+}
+.song-image {
+    width: 50px; 
+    height: 50px;
+    object-fit: cover; 
+    padding-bottom: 5px;
+}
+.ultimaPlaylist{
+    padding: 10px;
+}
+li {
+    list-style-type: none;
+    margin-right: 15px;
+}
+a.lastplay {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: #000000;
+}
+a.lastplay:hover {
+    background-color: #56595d;
+}
+#myDiv, #myDivBackground {
+    width: 75%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 66px;
+    border-radius: 0px;
+    height: 8px;
+    background-color: #0077ff;
+
+}
+#myDivBackground {
+    background-color: #ffffff;
+}
+b{
+    margin: 12px;
+}
+
 
 /* Diseny per TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
     .menu{
         padding: 0px;
         margin: 0px;
-        background-color: #00296b;
+        background-color: #0d0f12;
         font-weight: bold;
     }
     .fondotext{
         margin: 0px;
         padding: 10px;
-        background-color: #00509d;
+        background-color: #31353b;
     }
     .titol{
         margin: 0px;
@@ -330,7 +588,7 @@ p{
     ul{
         list-style: none;
         display: flex;
-        gap: 10px;
+        gap: 0px;
         justify-content: center;
         padding-left: 0px;
         margin: 0px;
@@ -340,28 +598,23 @@ p{
          color: rgb(255, 255, 255);
          text-decoration: none;
          padding: 10px 10px;
-         
-         width: 150px;
+         font-size: 14px;
+         width: 130px;
          display: block;
          text-align: center;
          border-radius: 5px;
          margin-top: 8px;
      }
      a:hover{
-         color: rgb(255, 255, 255);
-         text-decoration: none;
-         padding: 10px 10px;
-         background-color: #003f88;
-         width: 150px;
-         display: block;
-         text-align: center;
+         background-color: #0077ff;
+         width: 130px;
          margin-top: 8px;
      }
     body {
         font-family: 'Arial', sans-serif;
         margin: 0px;
         padding: 0px;
-        background-color: #72bac9;
+        background-color: #d3d3d3;
         border: 0px;
     }
     .nomsong{
@@ -369,28 +622,115 @@ p{
         text-align: center;
         text-shadow: 1px 1px 2px rgb(118, 110, 110);
         font-size: 20px;
-        color: #000000;
+        color: #ffffff;
+        margin: 10px;
     }
     
    
     .iconasong{
         width: 100%;
-        max-width: 250px;
+        max-width: 350px;
         height: auto;
-        border-radius: 5px;
+        border-radius: 50%;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
         position: fixed;
-        bottom: 150px;
-        left: 43%;
+        bottom: 27%;
+        left: 54%;
+        border: 3px solid #000000;
+    }
+
+    @keyframes rotateInfinitely {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    .iconasong-rotating {
+        animation: rotateInfinitely 4s linear infinite;
+    }
+
+
+    #IDequalizer{
+        height: 50px;
+        width: 100px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: fixed;
+        left: 6px;
+        bottom: 40px;
+        
     }
    
+    #IDequalizer1, 
+    #IDequalizer2, 
+    #IDequalizer3, 
+    #IDequalizer4, 
+    #IDequalizer5, 
+    #IDequalizer6, 
+    #IDequalizer7, 
+    #IDequalizer8, 
+    #IDequalizer9, 
+    #IDequalizer10
+     {
+        background-color: rgb(255, 255, 255);
+        width: 6px;
+        height: 11px;
+        margin: 1px;
+    
 
+    }
+
+
+    @keyframes IDequalizer5Infinitely {
+        0%, 100% {
+         height: 17px;
+        }
+        25%{
+            height: 7px;
+        }
+        50% {
+            height: 27px;
+        }
+        
+    }
+    .IDequalizer1Rotating {
+        animation: IDequalizer5Infinitely 0.5s linear infinite;
+    }
+    .IDequalizer2Rotating {
+        animation: IDequalizer5Infinitely 0.7s linear infinite;
+    }
+    .IDequalizer3Rotating {
+        animation: IDequalizer5Infinitely 0.9s linear infinite;
+    }
+    .IDequalizer4Rotating {
+        animation: IDequalizer5Infinitely 0.4s linear infinite;
+    }
+    .IDequalizer5Rotating {
+        animation: IDequalizer5Infinitely 0.8s linear infinite;
+    }
+    .IDequalizer6Rotating {
+        animation: IDequalizer5Infinitely 0.2s linear infinite;
+    }
+    .IDequalizer7Rotating {
+        animation: IDequalizer5Infinitely 0.5s linear infinite;
+    }
+    .IDequalizer8Rotating {
+        animation: IDequalizer5Infinitely 0.4s linear infinite;
+    }
+    
+    
+    
     .logosong {
         display: flex;
         justify-content: center;  
         align-items: center;     
         height: 100%;            
     }
+    
     
     .reproductor {
         display: flex;
@@ -403,9 +743,10 @@ p{
     .art-box {
         margin-top: 10px;
         position: fixed;
-        bottom: 80px;
-        background-color: antiquewhite;
+        bottom: 73px;
+        background-color: #000000;
         width: 100%;
+        box-shadow: 0px -1px 25px rgb(0, 0, 0);
     }
     
     .buttoncontrol:hover{
@@ -413,15 +754,17 @@ p{
     }
 
     .controls-box{
-        background-color: #00296b;
+        background-color: #000000;
         border-radius: 4px;
         position: fixed;
         bottom: 0px;
         width: 100%;
         display: flex;
         justify-content: center;
-        padding: 20px;
+        padding: 15px;
         gap: 20px;
+        height: 44px;
+        
     }
 
     
@@ -433,93 +776,98 @@ p{
     }
     .controls-box button{
         padding: 5px;
-        background-color: #00296b;
+        background-color: #000000;
         border: none;
         border-radius: 8px;
+        transition: transform .2s;
     }
     .controls-box button:hover{
         padding: 5px;
-        background-color: #083a89;
+        background-color: rgb(60, 65, 70);
         border: none;
         cursor: pointer;
-        
+        transform: scale(1.3);
     }
+
 
     .volum{
         display: flex;
         justify-content: right;
         position: fixed;
-        bottom: 30px;
+        bottom: 64px;
         right: 30px;
         width: 10%;
-        appearance: none;
-        outline: none;
-        height: 7px;
-        border-radius: 0.5vmin;
-        background-color: #5888bf;
-    }
-    .volum:hover{
-        
-        height: 12px;
-        transition: 0.1s ease;
-        cursor: pointer;
-        background-color: #5888bf;
-    }
-    .progreso{
-        transition: 0.1s ease;
-        display: flex;
-        justify-content: center;
-        position: fixed;
-        bottom: 72px;
-        width: 100%;
         border-radius: 0px;
         appearance: none;
         outline: none;
         height: 7px;
-        background-color: #a2bede;
-
+        background-color: #0077ff;
+        transform: rotate(0deg);
+    }
+    .volum:hover{
+        cursor: pointer;
+    }
+    .progreso{
+    
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 66px;
+        width: 70%;
+        border-radius: 0px;
+        appearance: none;
+        outline: none;
+        height: 2px;
+        background-color: #0077ff;
+        transition: value 0.2s linear; 
         
+       
     }
     .progreso:hover{
         
-        height: 12px;
+        height: 10px;
         transition: 0.1s ease;
         cursor: pointer;
-        background-color: #5888bf;
+        background-color: #0077ff;
     }
+    
     input::-webkit-slider-thumb {
         cursor: pointer;
+        
+        width: 4px;
+        
+        border-radius: 0px;
         appearance: none;
-        width: 2vmin;
-        height: 2vmin;
-        background: white;
-        border-radius: 50%;
+        outline: none;
+        height: 7px;
+        background: rgb(255, 255, 255);
+        
       }
       
 
       .playlists {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-       
+        
       
     }
-     
     
+     
 
     .playlist {
         transition: 0.2s ease;
         border: 1px solid black;
         padding: 10px;
+        padding-left: 13px;
         padding-top: 0px;
         margin: 10px;
+        margin-left: 20px;
         cursor: pointer;
-        background-color: antiquewhite;
+        background-color: #b1aaa3;
         box-shadow: 4px 4px 5px black;
         border-radius: 2px;
         height: 100%;
         padding-bottom: 0px;
         
-
     }
 
     .playlist:hover {
@@ -542,7 +890,9 @@ p{
     .song{
         color: #1b1e21;
         justify-content: left;
-        
+        display: flex;
+        align-items: center;
+        gap: 10px; 
     }
     
     a.botocanco{
@@ -554,11 +904,12 @@ p{
         font-weight: bold;
         text-shadow: 0px 0px 0px rgb(0, 0, 0);
         font-size: 15px;
-        
+        margin-bottom: 8px;
+        margin-top: 0px;
         }
     a.botocanco:hover{
         text-decoration: none;
-        background-color: #184c9e;
+        background-color: #b9bfc8;
         width: 100%;
         }
   
@@ -573,50 +924,206 @@ p{
         height: 100%;
         }
      p{
-        height: 100%;
+        height: 10px;
         display: block;
-        }
-      
-    .musica{
-        width: 40%;
-        display: inline-block
-        }
-    .nomusuari{
-        position: fixed;
-        top: 15px;
-        color: aliceblue;
-        left: 85%;
-    }
-    p{
         color: aliceblue;
         position: fixed;
         top: 2px;
         left: 1%;
+        opacity: 1;
+        }
+      
+    .musica{
+        width: 50%;
+        height: 600px;
+        overflow-y: scroll; /* Desplazamiento vertical */
+        padding: 10px; 
+        }
+
+        .musica::-webkit-scrollbar {
+            width: 8px;
+        }
+        .musica::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            border-radius: 4px;
+        }
+        .musica::-webkit-scrollbar-track {
+            background-color: lightgrey;
+        }
+
+
+    .nomusuari{
+        position: fixed;
+        top: 80px;
+        color: rgb(255, 255, 255);
+        left: 69%;
     }
-    
-    .textnom{
-        border-radius: 5px;
-        box-shadow: 1px 1px 1px black;
-        background-color: #72bac9;
+    .textnom {
+        border: none;              
+        outline: none;            
+        padding: 5px 0;         
+        background-color: rgb(200, 199, 203);
     }
-    .textnom:hover{
-        border-radius: 5px;
-        box-shadow: 2px 2px 2px black;
+    .textnom:focus {
+        background-color: #ffffff;
     }
     .enviar{
-        border-radius: 1px;
-        box-shadow: 1px 1px 1px black;
-        background-color: #72bac9;
+        padding: 5px 0;            
+        color: white;
+        background-color: #0d0f12;
+        outline: none;    
+        border: none;  
+        width: 50px;
+        border-radius: 5px;
     }
     .enviar:hover{
-        
         cursor: pointer;
-        border-radius: 1px;
-        box-shadow: 2px 2px 2px black;
+        border-radius: 5px;
         transition: 0.1s ease;
         transform: scale(1.03);
-        background-color: #41b0c6;
+        background-color: #0077ff;
     }
+
+   
+    /* -- Estils per la pagina crearplaylist.php -- */
+    .divCreacioPlayist,.DivUltimaPlaylist{
+        background-color: #8b939d;
+        align-content: center;
+        width: 580px;
+        margin: auto;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 10px;
+        margin-top: 20px;
+        box-shadow: 3px 3px 3px black;
+    }
+    
+    #formulariplaylists{
+        align-content: center;
+        margin: 20px;
+    }
+    #titolcrearplaylist{
+        font-weight: bold;
+        text-align: center;
+    }
+    #nom_playlist{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    #triarlescancons{
+        margin-bottom: 10px;
+    }
+    #enviarplaylist{
+        width: 100%;
+        background-color: #000000;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 1px 1px 1px black;
+    }
+    #enviarplaylist:hover , a.lastplay:hover{
+        transition: transform .2s;
+        background-color: #0062ff;
+        transform: scale(1.02);
+    }
+  
+
+    .divMostrarcançons {
+        border: 1px solid black;
+        cursor: pointer;
+        background-color: #b1aaa3;
+        box-shadow: 1px 1px 1px black;
+        border-radius: 2px;
+        height: 100%;
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-bottom: 10px
+        
+    }
+    #titoleliminarplaylist{
+        font-weight: bold;
+        padding-left: 15px;
+        
+    }
+    #eliminarplaylist{
+        padding-top: 5px;
+        display: flex;      
+        align-items: center; 
+        justify-content: space-between;   
+        padding-left: 15px;      
+    }
+
+    #eliminarplaylist a {
+        margin-top: 0px;
+        background-color: #000000;
+        margin-right: 15px;
+    }
+    #eliminarplaylist a:hover {
+        transition: transform .2s;
+        background-color: #0062ff;
+        transform: scale(1.02);
+        
+    }
+    #currentTime{
+        position: fixed;
+        bottom: 40px;
+        left: 15%;
+        color: #ffffff;
+    }
+    #totalTime{
+        position: fixed;
+        bottom: 40px;
+        right: 15%;
+        color: #ffffff;
+    }
+    .song-image {
+        width: 50px; 
+        height: 50px;
+        object-fit: cover; 
+        padding-bottom: 5px;
+    }
+    .ultimaPlaylist{
+        padding: 10px;
+    }
+    li {
+        list-style-type: none;
+        margin-right: 15px;
+    }
+    a.lastplay {
+        color: rgb(255, 255, 255);
+        width: 100%;
+        margin-bottom: 8px;
+        background-color: #000000;
+    }
+    a.lastplay:hover {
+        background-color: #56595d;
+    }
+    #myDiv, #myDivBackground {
+        width: 70%;
+        margin-left: 15%;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 65px;
+        border-radius: 0px;
+        height: 8px;
+        background-color: #0077ff;
+
+    }
+    #myDivBackground {
+        background-color: #ffffff;
+    }
+    b{
+        margin: 12px;
+    }
+    
 }
 
 /* Diseny per ORDINADOR */
@@ -853,14 +1360,15 @@ p{
         display: flex;
         justify-content: right;
         position: fixed;
-        bottom: 66px;
+        bottom: 64px;
         right: 30px;
         width: 10%;
         border-radius: 0px;
         appearance: none;
         outline: none;
-        height: 5px;
+        height: 8px;
         background-color: #0077ff;
+        transform: rotate(0deg);
     }
     .volum:hover{
         
@@ -901,7 +1409,7 @@ p{
         border-radius: 0px;
         appearance: none;
         outline: none;
-        height: 5px;
+        height: 8px;
         background: rgb(255, 255, 255);
         
       }
@@ -992,6 +1500,7 @@ p{
         position: fixed;
         top: 2px;
         left: 1%;
+        opacity: 1;
         }
       
     .musica{
@@ -1015,34 +1524,40 @@ p{
 
     .nomusuari{
         position: fixed;
-        top: 15px;
+        top: 16px;
         color: rgb(255, 255, 255);
-        left: 80%;
+        left:77%;
     }
     
     
-    .textnom{
-        border-radius: 5px;
-        box-shadow: 1px 1px 1px black;
+    .textnom {
+        border: none;               /* Eliminar todos los bordes */
+        outline: none;              /* Eliminar el contorno azul predeterminado cuando el input está activo */
+        padding: 5px 0;            /* Añadir un pequeño relleno en la parte superior e inferior para separación */
+        background-color: rgb(200, 199, 203);
+    }
+    
+    .textnom:focus {
         background-color: #ffffff;
     }
-    .textnom:hover{
-        border-radius: 5px;
-        box-shadow: 2px 2px 2px black;
-    }
+    
+    /* Estilo cuando el input está en foco */
+  
     .enviar{
-        border-radius: 1px;
-        box-shadow: 1px 1px 1px black;
-        background-color: #ffffff;
+        padding: 5px 0;            /* Añadir un pequeño relleno en la parte superior e inferior para separación */
+        color: white;
+        background-color: #0d0f12;
+        outline: none;    
+        border: none;  
+        width: 50px;
+        border-radius: 5px;
     }
     .enviar:hover{
-        
         cursor: pointer;
-        border-radius: 1px;
-        box-shadow: 2px 2px 2px black;
+        border-radius: 5px;
         transition: 0.1s ease;
         transform: scale(1.03);
-        background-color: #8f9192;
+        background-color: #0077ff;
     }
 
    
@@ -1172,7 +1687,7 @@ p{
         display: flex;
         justify-content: center;
         position: fixed;
-        bottom: 66px;
+        bottom: 65px;
         border-radius: 0px;
         height: 8px;
         background-color: #0077ff;

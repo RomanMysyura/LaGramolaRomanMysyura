@@ -63,7 +63,7 @@ if(isset($_COOKIE["ultimaPlaylist"])&&($_COOKIE["DataDeLaUltimaPlaylist"])) {
 </div>
 
 <div class="DivUltimaPlaylist"> 
-<h3 class='ultimaPlaylist'> Top cançons:</h3>
+<h3 class='ultimaPlaylist'> Las cançons mes reproduïdes:</h3>
 
 <?php
         $songs = json_decode(file_get_contents("songs.json"), true);
@@ -73,8 +73,9 @@ if(isset($_COOKIE["ultimaPlaylist"])&&($_COOKIE["DataDeLaUltimaPlaylist"])) {
             return $b['reproduccions'] - $a['reproduccions'];
         });
             foreach ($songs as $song) {
-               
+                
                 echo "<b>",$song['reproduccions']," - " , $song['title'] ,'<br>';
+                
         }
 ?>
 
@@ -91,7 +92,7 @@ if (isset($_POST["nom"]))  {
 }
 
 if (isset($_SESSION["usuari"])) {
-    echo "<p>Nom del usuari: " . $_SESSION["usuari"] . "</p>";
+    echo "<p>" . $_SESSION["usuari"] . "</p>";
 }
 
 ?>

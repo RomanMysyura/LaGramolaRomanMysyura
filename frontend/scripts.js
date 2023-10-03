@@ -98,13 +98,6 @@ let isAudioLoaded = false;
 
 function playPause() {
 
-
-
-
-
-
-
-
     let playImage = "images/tocar.svg";
     let pauseImage = "images/pausa.svg";
     let bcntrlplayImg = document.getElementById("bcntrlplay");
@@ -153,8 +146,6 @@ function playPause() {
             .catch((error) => {
                 console.error('Error, no sha guardat la reproducció:', error);
             });
-
-
 
 
 

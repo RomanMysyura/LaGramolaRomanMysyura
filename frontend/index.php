@@ -65,13 +65,8 @@ if(isset($songid)) {
 		</nav>
 		
 
-
-		
-		
-
-
 		<form class="nomusuari" name="formulario" method="post">
-			Nom: <input class="textnom" type="text" name="nom" value="">
+			<input class="textnom" type="text" name="nom" value="" placeholder=" Introdueix el teu nom:">
 			<input class="enviar" type="submit" />
 		</form>
 
@@ -81,7 +76,7 @@ if(isset($songid)) {
                     $_SESSION["usuari"] = $nom;
                 }   
                 if (isset($_SESSION["usuari"])) {
-                    echo "<p>Nom del usuari: " . $_SESSION["usuari"] . "</p>";
+                    echo "<p>" . $_SESSION["usuari"] . "</p>";
                 }
         ?>
 

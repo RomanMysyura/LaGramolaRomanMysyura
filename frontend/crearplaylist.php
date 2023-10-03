@@ -44,7 +44,7 @@ if (isset($_POST["nom"]))  {
 }
 
 if (isset($_SESSION["usuari"])) {
-    echo "<p>Nom del usuari: " . $_SESSION["usuari"] . "</p>";
+    echo "<p>" . $_SESSION["usuari"] . "</p>";
 }
 
 
@@ -77,7 +77,7 @@ if (isset($_SESSION["usuari"])) {
         <br>
     <input id="enviarplaylist" type="submit" value="Enviar">
 </form>
-</div>
+</div> 
 
 
 
