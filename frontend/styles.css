@@ -1,22 +1,25 @@
 /* Diseny per MOVIL */
-.menu{
+.menu {
     padding: 0px;
     margin: 0px;
     background-color: #0d0f12;
     font-weight: bold;
 }
-.fondotext{
+
+.fondotext {
     margin: 0px;
     padding: 10px;
     background-color: #31353b;
 }
-.titol{
+
+.titol {
     margin: 0px;
     padding: 10px;
     color: aliceblue;
 
 }
-ul{
+
+ul {
     list-style: none;
     display: flex;
     gap: 10px;
@@ -24,28 +27,30 @@ ul{
     padding-left: 0px;
     margin: 0px;
     padding-bottom: 8px;
- }
- a{
-     color: rgb(255, 255, 255);
-     text-decoration: none;
-     padding: 10px 10px;
-     
-     width: 150px;
-     display: block;
-     text-align: center;
-     border-radius: 5px;
-     margin-top: 8px;
- }
- a:hover{
-     color: rgb(255, 255, 255);
-     text-decoration: none;
-     padding: 10px 10px;
-     background-color: #0077ff;
-     width: 150px;
-     display: block;
-     text-align: center;
-     margin-top: 8px;
- }
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 10px;
+    width: 150px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: #0077ff;
+    width: 150px;
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0px;
@@ -53,7 +58,8 @@ body {
     background-color: #d3d3d3;
     border: 0px;
 }
-.nomsong{
+
+.nomsong {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     text-shadow: 1px 1px 2px rgb(118, 110, 110);
@@ -62,8 +68,7 @@ body {
     margin: 10px;
 }
 
-
-.iconasong{
+.iconasong {
     width: 50%;
     max-width: 150px;
     height: auto;
@@ -79,16 +84,17 @@ body {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
+
 .iconasong-rotating {
     animation: rotateInfinitely 4s linear infinite;
 }
 
-
-#IDequalizer{
+#IDequalizer {
     height: 50px;
     width: 100px;
     margin-left: 10px;
@@ -98,73 +104,81 @@ body {
     position: fixed;
     left: 1px;
     bottom: 140px;
-    
+
 }
 
-#IDequalizer1, 
-#IDequalizer2, 
-#IDequalizer3, 
-#IDequalizer4, 
-#IDequalizer5, 
-#IDequalizer6, 
-#IDequalizer7, 
-#IDequalizer8, 
-#IDequalizer9, 
-#IDequalizer10
- {
+#IDequalizer1,
+#IDequalizer2,
+#IDequalizer3,
+#IDequalizer4,
+#IDequalizer5,
+#IDequalizer6,
+#IDequalizer7,
+#IDequalizer8,
+#IDequalizer9,
+#IDequalizer10 {
     background-color: rgb(255, 255, 255);
     width: 6px;
     height: 11px;
     margin: 1px;
 
-
 }
 
-
 @keyframes IDequalizer5Infinitely {
-    0%, 100% {
-     height: 17px;
+
+    0%,
+    100% {
+        height: 17px;
     }
-    25%{
+
+    25% {
         height: 7px;
     }
+
     50% {
         height: 27px;
     }
-    
+
 }
+
 .IDequalizer1Rotating {
     animation: IDequalizer5Infinitely 0.5s linear infinite;
 }
+
 .IDequalizer2Rotating {
     animation: IDequalizer5Infinitely 0.7s linear infinite;
 }
+
 .IDequalizer3Rotating {
     animation: IDequalizer5Infinitely 0.9s linear infinite;
 }
+
 .IDequalizer4Rotating {
     animation: IDequalizer5Infinitely 0.4s linear infinite;
 }
+
 .IDequalizer5Rotating {
     animation: IDequalizer5Infinitely 0.8s linear infinite;
 }
+
 .IDequalizer6Rotating {
     animation: IDequalizer5Infinitely 0.2s linear infinite;
 }
+
 .IDequalizer7Rotating {
     animation: IDequalizer5Infinitely 0.5s linear infinite;
 }
+
 .IDequalizer8Rotating {
     animation: IDequalizer5Infinitely 0.4s linear infinite;
 }
 
 
-
 .logosong {
     display: flex;
-    justify-content: center;  
-    align-items: center;     
-    height: 100%;            
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 
@@ -185,11 +199,11 @@ body {
     box-shadow: 0px -1px 25px rgb(0, 0, 0);
 }
 
-.buttoncontrol:hover{
+.buttoncontrol:hover {
     cursor: pointer;
 }
 
-.controls-box{
+.controls-box {
     background-color: #000000;
     border-radius: 4px;
     position: fixed;
@@ -200,24 +214,23 @@ body {
     padding: 15px;
     gap: 20px;
     height: 44px;
-    
-}
 
+}
 
 .controls-box img {
     height: 25px;
     width: 25px;
-
-    
 }
-.controls-box button{
+
+.controls-box button {
     padding: 5px;
     background-color: #000000;
     border: none;
     border-radius: 8px;
     transition: transform .2s;
 }
-.controls-box button:hover{
+
+.controls-box button:hover {
     padding: 5px;
     background-color: rgb(60, 65, 70);
     border: none;
@@ -226,7 +239,7 @@ body {
 }
 
 
-.volum{
+.volum {
     display: flex;
     justify-content: right;
     position: fixed;
@@ -240,15 +253,15 @@ body {
     background-color: #0077ff;
     transform: rotate(90deg);
 }
-.volum:hover{
-    
+
+.volum:hover {
     height: 7px;
     transition: 0.1s ease;
     cursor: pointer;
     background-color: #0077ff;
 }
-.progreso{
 
+.progreso {
     display: flex;
     justify-content: center;
     position: fixed;
@@ -259,12 +272,10 @@ body {
     outline: none;
     height: 2px;
     background-color: #0077ff;
-    transition: value 0.2s linear; 
-    
-   
+    transition: value 0.2s linear;
 }
-.progreso:hover{
-    
+
+.progreso:hover {
     height: 10px;
     transition: 0.1s ease;
     cursor: pointer;
@@ -273,25 +284,19 @@ body {
 
 input::-webkit-slider-thumb {
     cursor: pointer;
-    
     width: 4px;
-    
     border-radius: 0px;
     appearance: none;
     outline: none;
     height: 5px;
     background: rgb(255, 255, 255);
-    
-  }
-  
 
-  .playlists {
-    grid-template-columns: 1fr 1fr 1fr;
-    
-  
 }
 
- 
+.playlists {
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
 
 .playlist {
     transition: 0.2s ease;
@@ -307,16 +312,14 @@ input::-webkit-slider-thumb {
     border-radius: 2px;
     height: 100%;
     padding-bottom: 0px;
-    
 }
 
 .playlist:hover {
     transition: 0.1s ease;
-    transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
+    transform: scale(1.03);
+}
 
 .songsplaylist {
-    /* display: none; */
     list-style-type: none;
     padding: 0;
     margin-top: 10px;
@@ -327,15 +330,16 @@ input::-webkit-slider-thumb {
 .playlist.active .songsplaylist {
     display: block;
 }
-.song{
+
+.song {
     color: #1b1e21;
     justify-content: left;
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
 }
 
-a.botocanco{
+a.botocanco {
     color: #000000;
     padding: 10px 10px;
     width: 100%;
@@ -346,24 +350,26 @@ a.botocanco{
     font-size: 15px;
     margin-bottom: 8px;
     margin-top: 0px;
-    }
-a.botocanco:hover{
+}
+
+a.botocanco:hover {
     text-decoration: none;
     background-color: #b9bfc8;
     width: 100%;
-    }
+}
 
-details{
+details {
     display: block;
-    
-    }
 
-  details summary {  
+}
+
+details summary {
     list-style: none;
     display: block;
     height: 100%;
-    }
- p{
+}
+
+p {
     height: 10px;
     display: block;
     font-size: 15px;
@@ -372,62 +378,68 @@ details{
     top: -10px;
     left: 1%;
     opacity: 0;
-    }
-  
-.musica{
+}
+
+.musica {
     width: 95%;
     height: 370px;
-    overflow-y: scroll; /* Desplazamiento vertical */
-    padding: 10px; 
-    }
+    overflow-y: scroll;
+    padding: 10px;
+}
 
-    .musica::-webkit-scrollbar {
-        width: 8px;
-    }
-    .musica::-webkit-scrollbar-thumb {
-        background-color: darkgrey;
-        border-radius: 4px;
-    }
-    .musica::-webkit-scrollbar-track {
-        background-color: lightgrey;
-    }
+.musica::-webkit-scrollbar {
+    width: 8px;
+}
+
+.musica::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 4px;
+}
+
+.musica::-webkit-scrollbar-track {
+    background-color: lightgrey;
+}
 
 
-    .nomusuari{
-        position: fixed;
-        top: 80px;
-        color: rgb(255, 255, 255);
-        right: 10px;
-    }
-    .textnom {
-        border: none;              
-        outline: none;            
-        padding: 5px 0;         
-        background-color: rgb(200, 199, 203);
-    }
-    .textnom:focus {
-        background-color: #ffffff;
-    }
-    .enviar{
-        padding: 5px 0;            
-        color: white;
-        background-color: #0d0f12;
-        outline: none;    
-        border: none;  
-        width: 50px;
-        border-radius: 5px;
-    }
-    .enviar:hover{
-        cursor: pointer;
-        border-radius: 5px;
-        transition: 0.1s ease;
-        transform: scale(1.03);
-        background-color: #0077ff;
-    }
+.nomusuari {
+    position: fixed;
+    top: 80px;
+    color: rgb(255, 255, 255);
+    right: 10px;
+}
 
+.textnom {
+    border: none;
+    outline: none;
+    padding: 5px 0;
+    background-color: rgb(200, 199, 203);
+}
+
+.textnom:focus {
+    background-color: #ffffff;
+}
+
+.enviar {
+    padding: 5px 0;
+    color: white;
+    background-color: #0d0f12;
+    outline: none;
+    border: none;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.enviar:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.1s ease;
+    transform: scale(1.03);
+    background-color: #0077ff;
+}
 
 /* -- Estils per la pagina crearplaylist.php -- */
-.divCreacioPlayist,.DivUltimaPlaylist{
+.divCreacioPlayist,
+.DivUltimaPlaylist {
     background-color: #8b939d;
     align-content: center;
     width: 580px;
@@ -438,15 +450,17 @@ details{
     box-shadow: 3px 3px 3px black;
 }
 
-#formulariplaylists{
+#formulariplaylists {
     align-content: center;
     margin: 20px;
 }
-#titolcrearplaylist{
+
+#titolcrearplaylist {
     font-weight: bold;
     text-align: center;
 }
-#nom_playlist{
+
+#nom_playlist {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -455,10 +469,12 @@ details{
     border-radius: 4px;
     box-sizing: border-box;
 }
-#triarlescancons{
+
+#triarlescancons {
     margin-bottom: 10px;
 }
-#enviarplaylist{
+
+#enviarplaylist {
     width: 100%;
     background-color: #000000;
     color: white;
@@ -469,7 +485,9 @@ details{
     cursor: pointer;
     box-shadow: 1px 1px 1px black;
 }
-#enviarplaylist:hover , a.lastplay:hover{
+
+#enviarplaylist:hover,
+a.lastplay:hover {
     transition: transform .2s;
     background-color: #0062ff;
     transform: scale(1.02);
@@ -486,19 +504,20 @@ details{
     padding-top: 5px;
     padding-left: 15px;
     padding-bottom: 10px
-    
 }
-#titoleliminarplaylist{
+
+#titoleliminarplaylist {
     font-weight: bold;
     padding-left: 15px;
-    
+
 }
-#eliminarplaylist{
+
+#eliminarplaylist {
     padding-top: 5px;
-    display: flex;      
-    align-items: center; 
-    justify-content: space-between;   
-    padding-left: 15px;      
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
 }
 
 #eliminarplaylist a {
@@ -506,47 +525,57 @@ details{
     background-color: #000000;
     margin-right: 15px;
 }
+
 #eliminarplaylist a:hover {
     transition: transform .2s;
     background-color: #0062ff;
     transform: scale(1.02);
-    
+
 }
-#currentTime{
+
+#currentTime {
     position: fixed;
     bottom: 40px;
     left: 10%;
     color: #ffffff;
 }
-#totalTime{
+
+#totalTime {
     position: fixed;
     bottom: 40px;
     right: 15%;
     color: #ffffff;
 }
+
 .song-image {
-    width: 50px; 
+    width: 50px;
     height: 50px;
-    object-fit: cover; 
+    object-fit: cover;
     padding-bottom: 5px;
 }
-.ultimaPlaylist{
+
+.ultimaPlaylist {
     padding: 10px;
 }
+
 li {
     list-style-type: none;
     margin-right: 15px;
 }
+
 a.lastplay {
     color: rgb(255, 255, 255);
     width: 100%;
     margin-bottom: 8px;
     background-color: #000000;
 }
+
 a.lastplay:hover {
     background-color: #56595d;
 }
-#myDiv, #myDivBackground {
+
+#myDiv,
+#myDivBackground {
     width: 75%;
     margin-left: 10%;
     display: flex;
@@ -558,34 +587,38 @@ a.lastplay:hover {
     background-color: #0077ff;
 
 }
+
 #myDivBackground {
     background-color: #ffffff;
 }
-b{
+
+b {
     margin: 12px;
 }
 
-
 /* Diseny per TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .menu{
+    .menu {
         padding: 0px;
         margin: 0px;
         background-color: #0d0f12;
         font-weight: bold;
     }
-    .fondotext{
+
+    .fondotext {
         margin: 0px;
         padding: 10px;
         background-color: #31353b;
     }
-    .titol{
+
+    .titol {
         margin: 0px;
         padding: 10px;
         color: aliceblue;
 
     }
-    ul{
+
+    ul {
         list-style: none;
         display: flex;
         gap: 0px;
@@ -593,23 +626,26 @@ b{
         padding-left: 0px;
         margin: 0px;
         padding-bottom: 8px;
-     }
-     a{
-         color: rgb(255, 255, 255);
-         text-decoration: none;
-         padding: 10px 10px;
-         font-size: 14px;
-         width: 130px;
-         display: block;
-         text-align: center;
-         border-radius: 5px;
-         margin-top: 8px;
-     }
-     a:hover{
-         background-color: #0077ff;
-         width: 130px;
-         margin-top: 8px;
-     }
+    }
+
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 10px 10px;
+        font-size: 14px;
+        width: 130px;
+        display: block;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 8px;
+    }
+
+    a:hover {
+        background-color: #0077ff;
+        width: 130px;
+        margin-top: 8px;
+    }
+
     body {
         font-family: 'Arial', sans-serif;
         margin: 0px;
@@ -617,7 +653,8 @@ b{
         background-color: #d3d3d3;
         border: 0px;
     }
-    .nomsong{
+
+    .nomsong {
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         text-shadow: 1px 1px 2px rgb(118, 110, 110);
@@ -625,9 +662,8 @@ b{
         color: #ffffff;
         margin: 10px;
     }
-    
-   
-    .iconasong{
+
+    .iconasong {
         width: 100%;
         max-width: 350px;
         height: auto;
@@ -643,16 +679,17 @@ b{
         0% {
             transform: rotate(0deg);
         }
+
         100% {
             transform: rotate(360deg);
         }
     }
+
     .iconasong-rotating {
         animation: rotateInfinitely 4s linear infinite;
     }
 
-
-    #IDequalizer{
+    #IDequalizer {
         height: 50px;
         width: 100px;
         margin-left: 10px;
@@ -662,84 +699,90 @@ b{
         position: fixed;
         left: 6px;
         bottom: 40px;
-        
+
     }
-   
-    #IDequalizer1, 
-    #IDequalizer2, 
-    #IDequalizer3, 
-    #IDequalizer4, 
-    #IDequalizer5, 
-    #IDequalizer6, 
-    #IDequalizer7, 
-    #IDequalizer8, 
-    #IDequalizer9, 
-    #IDequalizer10
-     {
+
+    #IDequalizer1,
+    #IDequalizer2,
+    #IDequalizer3,
+    #IDequalizer4,
+    #IDequalizer5,
+    #IDequalizer6,
+    #IDequalizer7,
+    #IDequalizer8,
+    #IDequalizer9,
+    #IDequalizer10 {
         background-color: rgb(255, 255, 255);
         width: 6px;
         height: 11px;
         margin: 1px;
-    
 
     }
 
-
     @keyframes IDequalizer5Infinitely {
-        0%, 100% {
-         height: 17px;
+
+        0%,
+        100% {
+            height: 17px;
         }
-        25%{
+
+        25% {
             height: 7px;
         }
+
         50% {
             height: 27px;
         }
-        
+
     }
+
     .IDequalizer1Rotating {
         animation: IDequalizer5Infinitely 0.5s linear infinite;
     }
+
     .IDequalizer2Rotating {
         animation: IDequalizer5Infinitely 0.7s linear infinite;
     }
+
     .IDequalizer3Rotating {
         animation: IDequalizer5Infinitely 0.9s linear infinite;
     }
+
     .IDequalizer4Rotating {
         animation: IDequalizer5Infinitely 0.4s linear infinite;
     }
+
     .IDequalizer5Rotating {
         animation: IDequalizer5Infinitely 0.8s linear infinite;
     }
+
     .IDequalizer6Rotating {
         animation: IDequalizer5Infinitely 0.2s linear infinite;
     }
+
     .IDequalizer7Rotating {
         animation: IDequalizer5Infinitely 0.5s linear infinite;
     }
+
     .IDequalizer8Rotating {
         animation: IDequalizer5Infinitely 0.4s linear infinite;
     }
-    
-    
-    
+
     .logosong {
         display: flex;
-        justify-content: center;  
-        align-items: center;     
-        height: 100%;            
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
-    
-    
+
     .reproductor {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px;
-    
+
     }
-    
+
     .art-box {
         margin-top: 10px;
         position: fixed;
@@ -748,12 +791,12 @@ b{
         width: 100%;
         box-shadow: 0px -1px 25px rgb(0, 0, 0);
     }
-    
-    .buttoncontrol:hover{
+
+    .buttoncontrol:hover {
         cursor: pointer;
     }
 
-    .controls-box{
+    .controls-box {
         background-color: #000000;
         border-radius: 4px;
         position: fixed;
@@ -764,24 +807,25 @@ b{
         padding: 15px;
         gap: 20px;
         height: 44px;
-        
+
     }
 
-    
     .controls-box img {
         height: 25px;
         width: 25px;
 
-        
+
     }
-    .controls-box button{
+
+    .controls-box button {
         padding: 5px;
         background-color: #000000;
         border: none;
         border-radius: 8px;
         transition: transform .2s;
     }
-    .controls-box button:hover{
+
+    .controls-box button:hover {
         padding: 5px;
         background-color: rgb(60, 65, 70);
         border: none;
@@ -789,8 +833,7 @@ b{
         transform: scale(1.3);
     }
 
-
-    .volum{
+    .volum {
         display: flex;
         justify-content: right;
         position: fixed;
@@ -804,11 +847,12 @@ b{
         background-color: #0077ff;
         transform: rotate(0deg);
     }
-    .volum:hover{
+
+    .volum:hover {
         cursor: pointer;
     }
-    .progreso{
-    
+
+    .progreso {
         display: flex;
         justify-content: center;
         position: fixed;
@@ -819,39 +863,31 @@ b{
         outline: none;
         height: 2px;
         background-color: #0077ff;
-        transition: value 0.2s linear; 
-        
-       
+        transition: value 0.2s linear;
+
     }
-    .progreso:hover{
-        
+
+    .progreso:hover {
         height: 10px;
         transition: 0.1s ease;
         cursor: pointer;
         background-color: #0077ff;
     }
-    
+
     input::-webkit-slider-thumb {
         cursor: pointer;
-        
         width: 4px;
-        
         border-radius: 0px;
         appearance: none;
         outline: none;
         height: 7px;
         background: rgb(255, 255, 255);
-        
-      }
-      
 
-      .playlists {
-        grid-template-columns: 1fr 1fr 1fr;
-        
-      
     }
-    
-     
+
+    .playlists {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     .playlist {
         transition: 0.2s ease;
@@ -867,16 +903,15 @@ b{
         border-radius: 2px;
         height: 100%;
         padding-bottom: 0px;
-        
+
     }
 
     .playlist:hover {
         transition: 0.1s ease;
-        transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-      }
+        transform: scale(1.03);   
+    }
 
     .songsplaylist {
-        /* display: none; */
         list-style-type: none;
         padding: 0;
         margin-top: 10px;
@@ -887,15 +922,16 @@ b{
     .playlist.active .songsplaylist {
         display: block;
     }
-    .song{
+
+    .song {
         color: #1b1e21;
         justify-content: left;
         display: flex;
         align-items: center;
-        gap: 10px; 
+        gap: 10px;
     }
-    
-    a.botocanco{
+
+    a.botocanco {
         color: #000000;
         padding: 10px 10px;
         width: 100%;
@@ -906,24 +942,26 @@ b{
         font-size: 15px;
         margin-bottom: 8px;
         margin-top: 0px;
-        }
-    a.botocanco:hover{
+    }
+
+    a.botocanco:hover {
         text-decoration: none;
         background-color: #b9bfc8;
         width: 100%;
-        }
-  
-    details{
-        display: block;
-        
-        }
+    }
 
-      details summary {  
+    details {
+        display: block;
+
+    }
+
+    details summary {
         list-style: none;
         display: block;
         height: 100%;
-        }
-     p{
+    }
+
+    p {
         height: 10px;
         display: block;
         color: aliceblue;
@@ -931,52 +969,58 @@ b{
         top: 2px;
         left: 1%;
         opacity: 1;
-        }
-      
-    .musica{
+    }
+
+    .musica {
         width: 50%;
         height: 600px;
-        overflow-y: scroll; /* Desplazamiento vertical */
-        padding: 10px; 
-        }
+        overflow-y: scroll;
+        padding: 10px;
+    }
 
-        .musica::-webkit-scrollbar {
-            width: 8px;
-        }
-        .musica::-webkit-scrollbar-thumb {
-            background-color: darkgrey;
-            border-radius: 4px;
-        }
-        .musica::-webkit-scrollbar-track {
-            background-color: lightgrey;
-        }
+    .musica::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .musica::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        border-radius: 4px;
+    }
+
+    .musica::-webkit-scrollbar-track {
+        background-color: lightgrey;
+    }
 
 
-    .nomusuari{
+    .nomusuari {
         position: fixed;
         top: 80px;
         color: rgb(255, 255, 255);
         left: 69%;
     }
+
     .textnom {
-        border: none;              
-        outline: none;            
-        padding: 5px 0;         
+        border: none;
+        outline: none;
+        padding: 5px 0;
         background-color: rgb(200, 199, 203);
     }
+
     .textnom:focus {
         background-color: #ffffff;
     }
-    .enviar{
-        padding: 5px 0;            
+
+    .enviar {
+        padding: 5px 0;
         color: white;
         background-color: #0d0f12;
-        outline: none;    
-        border: none;  
+        outline: none;
+        border: none;
         width: 50px;
         border-radius: 5px;
     }
-    .enviar:hover{
+
+    .enviar:hover {
         cursor: pointer;
         border-radius: 5px;
         transition: 0.1s ease;
@@ -984,9 +1028,10 @@ b{
         background-color: #0077ff;
     }
 
-   
+
     /* -- Estils per la pagina crearplaylist.php -- */
-    .divCreacioPlayist,.DivUltimaPlaylist{
+    .divCreacioPlayist,
+    .DivUltimaPlaylist {
         background-color: #8b939d;
         align-content: center;
         width: 580px;
@@ -996,16 +1041,18 @@ b{
         margin-top: 20px;
         box-shadow: 3px 3px 3px black;
     }
-    
-    #formulariplaylists{
+
+    #formulariplaylists {
         align-content: center;
         margin: 20px;
     }
-    #titolcrearplaylist{
+
+    #titolcrearplaylist {
         font-weight: bold;
         text-align: center;
     }
-    #nom_playlist{
+
+    #nom_playlist {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
@@ -1014,10 +1061,12 @@ b{
         border-radius: 4px;
         box-sizing: border-box;
     }
-    #triarlescancons{
+
+    #triarlescancons {
         margin-bottom: 10px;
     }
-    #enviarplaylist{
+
+    #enviarplaylist {
         width: 100%;
         background-color: #000000;
         color: white;
@@ -1028,12 +1077,14 @@ b{
         cursor: pointer;
         box-shadow: 1px 1px 1px black;
     }
-    #enviarplaylist:hover , a.lastplay:hover{
+
+    #enviarplaylist:hover,
+    a.lastplay:hover {
         transition: transform .2s;
         background-color: #0062ff;
         transform: scale(1.02);
     }
-  
+
 
     .divMostrarcançons {
         border: 1px solid black;
@@ -1045,19 +1096,20 @@ b{
         padding-top: 5px;
         padding-left: 15px;
         padding-bottom: 10px
-        
     }
-    #titoleliminarplaylist{
+
+    #titoleliminarplaylist {
         font-weight: bold;
         padding-left: 15px;
-        
+
     }
-    #eliminarplaylist{
+
+    #eliminarplaylist {
         padding-top: 5px;
-        display: flex;      
-        align-items: center; 
-        justify-content: space-between;   
-        padding-left: 15px;      
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
     }
 
     #eliminarplaylist a {
@@ -1065,47 +1117,57 @@ b{
         background-color: #000000;
         margin-right: 15px;
     }
+
     #eliminarplaylist a:hover {
         transition: transform .2s;
         background-color: #0062ff;
         transform: scale(1.02);
-        
+
     }
-    #currentTime{
+
+    #currentTime {
         position: fixed;
         bottom: 40px;
         left: 15%;
         color: #ffffff;
     }
-    #totalTime{
+
+    #totalTime {
         position: fixed;
         bottom: 40px;
         right: 15%;
         color: #ffffff;
     }
+
     .song-image {
-        width: 50px; 
+        width: 50px;
         height: 50px;
-        object-fit: cover; 
+        object-fit: cover;
         padding-bottom: 5px;
     }
-    .ultimaPlaylist{
+
+    .ultimaPlaylist {
         padding: 10px;
     }
+
     li {
         list-style-type: none;
         margin-right: 15px;
     }
+
     a.lastplay {
         color: rgb(255, 255, 255);
         width: 100%;
         margin-bottom: 8px;
         background-color: #000000;
     }
+
     a.lastplay:hover {
         background-color: #56595d;
     }
-    #myDiv, #myDivBackground {
+
+    #myDiv,
+    #myDivBackground {
         width: 70%;
         margin-left: 15%;
         display: flex;
@@ -1117,36 +1179,41 @@ b{
         background-color: #0077ff;
 
     }
+
     #myDivBackground {
         background-color: #ffffff;
     }
-    b{
+
+    b {
         margin: 12px;
     }
-    
+
 }
 
 /* Diseny per ORDINADOR */
 @media (min-width: 1024px) {
-    
-    .menu{
+
+    .menu {
         padding: 0px;
         margin: 0px;
         background-color: #0d0f12;
         font-weight: bold;
     }
-    .fondotext{
+
+    .fondotext {
         margin: 0px;
         padding: 10px;
         background-color: #31353b;
     }
-    .titol{
+
+    .titol {
         margin: 0px;
         padding: 10px;
         color: aliceblue;
 
     }
-    ul{
+
+    ul {
         list-style: none;
         display: flex;
         gap: 10px;
@@ -1154,28 +1221,31 @@ b{
         padding-left: 0px;
         margin: 0px;
         padding-bottom: 8px;
-     }
-     a{
-         color: rgb(255, 255, 255);
-         text-decoration: none;
-         padding: 10px 10px;
-         
-         width: 150px;
-         display: block;
-         text-align: center;
-         border-radius: 5px;
-         margin-top: 8px;
-     }
-     a:hover{
-         color: rgb(255, 255, 255);
-         text-decoration: none;
-         padding: 10px 10px;
-         background-color: #0077ff;
-         width: 150px;
-         display: block;
-         text-align: center;
-         margin-top: 8px;
-     }
+    }
+
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 10px 10px;
+
+        width: 150px;
+        display: block;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 8px;
+    }
+
+    a:hover {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 10px 10px;
+        background-color: #0077ff;
+        width: 150px;
+        display: block;
+        text-align: center;
+        margin-top: 8px;
+    }
+
     body {
         font-family: 'Arial', sans-serif;
         margin: 0px;
@@ -1183,7 +1253,8 @@ b{
         background-color: #d3d3d3;
         border: 0px;
     }
-    .nomsong{
+
+    .nomsong {
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         text-shadow: 1px 1px 2px rgb(118, 110, 110);
@@ -1191,9 +1262,8 @@ b{
         color: #ffffff;
         margin: 10px;
     }
-    
-   
-    .iconasong{
+
+    .iconasong {
         width: 100%;
         max-width: 350px;
         height: auto;
@@ -1209,16 +1279,18 @@ b{
         0% {
             transform: rotate(0deg);
         }
+
         100% {
             transform: rotate(360deg);
         }
     }
+
     .iconasong-rotating {
         animation: rotateInfinitely 4s linear infinite;
     }
 
 
-    #IDequalizer{
+    #IDequalizer {
         height: 50px;
         width: 100px;
         margin-left: 10px;
@@ -1228,84 +1300,92 @@ b{
         position: fixed;
         left: 2.3%;
         bottom: 40px;
-        
+
     }
-   
-    #IDequalizer1, 
-    #IDequalizer2, 
-    #IDequalizer3, 
-    #IDequalizer4, 
-    #IDequalizer5, 
-    #IDequalizer6, 
-    #IDequalizer7, 
-    #IDequalizer8, 
-    #IDequalizer9, 
-    #IDequalizer10
-     {
+
+    #IDequalizer1,
+    #IDequalizer2,
+    #IDequalizer3,
+    #IDequalizer4,
+    #IDequalizer5,
+    #IDequalizer6,
+    #IDequalizer7,
+    #IDequalizer8,
+    #IDequalizer9,
+    #IDequalizer10 {
         background-color: rgb(255, 255, 255);
         width: 6px;
         height: 11px;
         margin: 1px;
-    
+
 
     }
 
-
     @keyframes IDequalizer5Infinitely {
-        0%, 100% {
-         height: 17px;
+
+        0%,
+        100% {
+            height: 17px;
         }
-        25%{
+
+        25% {
             height: 7px;
         }
+
         50% {
             height: 27px;
         }
-        
+
     }
+
     .IDequalizer1Rotating {
         animation: IDequalizer5Infinitely 0.5s linear infinite;
     }
+
     .IDequalizer2Rotating {
         animation: IDequalizer5Infinitely 0.7s linear infinite;
     }
+
     .IDequalizer3Rotating {
         animation: IDequalizer5Infinitely 0.9s linear infinite;
     }
+
     .IDequalizer4Rotating {
         animation: IDequalizer5Infinitely 0.4s linear infinite;
     }
+
     .IDequalizer5Rotating {
         animation: IDequalizer5Infinitely 0.8s linear infinite;
     }
+
     .IDequalizer6Rotating {
         animation: IDequalizer5Infinitely 0.2s linear infinite;
     }
+
     .IDequalizer7Rotating {
         animation: IDequalizer5Infinitely 0.5s linear infinite;
     }
+
     .IDequalizer8Rotating {
         animation: IDequalizer5Infinitely 0.4s linear infinite;
     }
-    
-    
-    
+
     .logosong {
         display: flex;
-        justify-content: center;  
-        align-items: center;     
-        height: 100%;            
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
-    
-    
+
+
     .reproductor {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px;
-    
+
     }
-    
+
     .art-box {
         margin-top: 10px;
         position: fixed;
@@ -1314,12 +1394,12 @@ b{
         width: 100%;
         box-shadow: 0px -1px 25px rgb(0, 0, 0);
     }
-    
-    .buttoncontrol:hover{
+
+    .buttoncontrol:hover {
         cursor: pointer;
     }
 
-    .controls-box{
+    .controls-box {
         background-color: #000000;
         border-radius: 4px;
         position: fixed;
@@ -1330,24 +1410,25 @@ b{
         padding: 15px;
         gap: 20px;
         height: 44px;
-        
+
     }
 
-    
     .controls-box img {
         height: 25px;
         width: 25px;
 
-        
+
     }
-    .controls-box button{
+
+    .controls-box button {
         padding: 5px;
         background-color: #000000;
         border: none;
         border-radius: 8px;
         transition: transform .2s;
     }
-    .controls-box button:hover{
+
+    .controls-box button:hover {
         padding: 5px;
         background-color: rgb(60, 65, 70);
         border: none;
@@ -1355,8 +1436,7 @@ b{
         transform: scale(1.3);
     }
 
-
-    .volum{
+    .volum {
         display: flex;
         justify-content: right;
         position: fixed;
@@ -1370,15 +1450,17 @@ b{
         background-color: #0077ff;
         transform: rotate(0deg);
     }
-    .volum:hover{
-        
+
+    .volum:hover {
+
         height: 7px;
         transition: 0.1s ease;
         cursor: pointer;
         background-color: #0077ff;
     }
-    .progreso{
-    
+
+    .progreso {
+
         display: flex;
         justify-content: center;
         position: fixed;
@@ -1389,39 +1471,31 @@ b{
         outline: none;
         height: 2px;
         background-color: #0077ff;
-        transition: value 0.2s linear; 
-        
-       
+        transition: value 0.2s linear;
+
+
     }
-    .progreso:hover{
-        
+
+    .progreso:hover {
         height: 10px;
         transition: 0.1s ease;
         cursor: pointer;
         background-color: #0077ff;
     }
-    
+
     input::-webkit-slider-thumb {
         cursor: pointer;
-        
         width: 4px;
-        
         border-radius: 0px;
         appearance: none;
         outline: none;
         height: 8px;
         background: rgb(255, 255, 255);
-        
-      }
-      
-
-      .playlists {
-        grid-template-columns: 1fr 1fr 1fr;
-        
-      
     }
-    
-     
+
+    .playlists {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     .playlist {
         transition: 0.2s ease;
@@ -1437,13 +1511,13 @@ b{
         border-radius: 2px;
         height: 100%;
         padding-bottom: 0px;
-        
     }
 
     .playlist:hover {
         transition: 0.1s ease;
-        transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-      }
+        transform: scale(1.03);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
 
     .songsplaylist {
         /* display: none; */
@@ -1457,15 +1531,16 @@ b{
     .playlist.active .songsplaylist {
         display: block;
     }
-    .song{
+
+    .song {
         color: #1b1e21;
         justify-content: left;
         display: flex;
         align-items: center;
-        gap: 10px; 
+        gap: 10px;
     }
-    
-    a.botocanco{
+
+    a.botocanco {
         color: #000000;
         padding: 10px 10px;
         width: 100%;
@@ -1476,24 +1551,26 @@ b{
         font-size: 15px;
         margin-bottom: 8px;
         margin-top: 0px;
-        }
-    a.botocanco:hover{
+    }
+
+    a.botocanco:hover {
         text-decoration: none;
         background-color: #b9bfc8;
         width: 100%;
-        }
-  
-    details{
-        display: block;
-        
-        }
+    }
 
-      details summary {  
+    details {
+        display: block;
+
+    }
+
+    details summary {
         list-style: none;
         display: block;
         height: 100%;
-        }
-     p{
+    }
+
+    p {
         height: 10px;
         display: block;
         color: aliceblue;
@@ -1501,58 +1578,57 @@ b{
         top: 2px;
         left: 1%;
         opacity: 1;
-        }
-      
-    .musica{
+    }
+
+    .musica {
         width: 40%;
         height: 600px;
-        overflow-y: scroll; /* Desplazamiento vertical */
-        padding: 10px; 
-        }
+        overflow-y: scroll;
+        padding: 10px;
+    }
 
-        .musica::-webkit-scrollbar {
-            width: 8px;
-        }
-        .musica::-webkit-scrollbar-thumb {
-            background-color: darkgrey;
-            border-radius: 4px;
-        }
-        .musica::-webkit-scrollbar-track {
-            background-color: lightgrey;
-        }
+    .musica::-webkit-scrollbar {
+        width: 8px;
+    }
 
+    .musica::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        border-radius: 4px;
+    }
 
-    .nomusuari{
+    .musica::-webkit-scrollbar-track {
+        background-color: lightgrey;
+    }
+
+    .nomusuari {
         position: fixed;
         top: 16px;
         color: rgb(255, 255, 255);
-        left:77%;
+        left: 77%;
     }
-    
-    
+
     .textnom {
-        border: none;               /* Eliminar todos los bordes */
-        outline: none;              /* Eliminar el contorno azul predeterminado cuando el input está activo */
-        padding: 5px 0;            /* Añadir un pequeño relleno en la parte superior e inferior para separación */
+        border: none;
+        outline: none;
+        padding: 5px 0;
         background-color: rgb(200, 199, 203);
     }
-    
+
     .textnom:focus {
         background-color: #ffffff;
     }
-    
-    /* Estilo cuando el input está en foco */
-  
-    .enviar{
-        padding: 5px 0;            /* Añadir un pequeño relleno en la parte superior e inferior para separación */
+
+    .enviar {
+        padding: 5px 0;
         color: white;
         background-color: #0d0f12;
-        outline: none;    
-        border: none;  
+        outline: none;
+        border: none;
         width: 50px;
         border-radius: 5px;
     }
-    .enviar:hover{
+
+    .enviar:hover {
         cursor: pointer;
         border-radius: 5px;
         transition: 0.1s ease;
@@ -1560,9 +1636,9 @@ b{
         background-color: #0077ff;
     }
 
-   
     /* -- Estils per la pagina crearplaylist.php -- */
-    .divCreacioPlayist,.DivUltimaPlaylist{
+    .divCreacioPlayist,
+    .DivUltimaPlaylist {
         background-color: #8b939d;
         align-content: center;
         width: 580px;
@@ -1572,16 +1648,18 @@ b{
         margin-top: 20px;
         box-shadow: 3px 3px 3px black;
     }
-    
-    #formulariplaylists{
+
+    #formulariplaylists {
         align-content: center;
         margin: 20px;
     }
-    #titolcrearplaylist{
+
+    #titolcrearplaylist {
         font-weight: bold;
         text-align: center;
     }
-    #nom_playlist{
+
+    #nom_playlist {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
@@ -1590,10 +1668,12 @@ b{
         border-radius: 4px;
         box-sizing: border-box;
     }
-    #triarlescancons{
+
+    #triarlescancons {
         margin-bottom: 10px;
     }
-    #enviarplaylist{
+
+    #enviarplaylist {
         width: 100%;
         background-color: #000000;
         color: white;
@@ -1604,12 +1684,13 @@ b{
         cursor: pointer;
         box-shadow: 1px 1px 1px black;
     }
-    #enviarplaylist:hover , a.lastplay:hover{
+
+    #enviarplaylist:hover,
+    a.lastplay:hover {
         transition: transform .2s;
         background-color: #0062ff;
         transform: scale(1.02);
     }
-  
 
     .divMostrarcançons {
         border: 1px solid black;
@@ -1621,19 +1702,20 @@ b{
         padding-top: 5px;
         padding-left: 15px;
         padding-bottom: 10px
-        
     }
-    #titoleliminarplaylist{
+
+    #titoleliminarplaylist {
         font-weight: bold;
         padding-left: 15px;
-        
+
     }
-    #eliminarplaylist{
+
+    #eliminarplaylist {
         padding-top: 5px;
-        display: flex;      
-        align-items: center; 
-        justify-content: space-between;   
-        padding-left: 15px;      
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
     }
 
     #eliminarplaylist a {
@@ -1641,47 +1723,57 @@ b{
         background-color: #000000;
         margin-right: 15px;
     }
+
     #eliminarplaylist a:hover {
         transition: transform .2s;
         background-color: #0062ff;
         transform: scale(1.02);
-        
+
     }
-    #currentTime{
+
+    #currentTime {
         position: fixed;
         bottom: 40px;
         left: 15%;
         color: #ffffff;
     }
-    #totalTime{
+
+    #totalTime {
         position: fixed;
         bottom: 40px;
         right: 15%;
         color: #ffffff;
     }
+
     .song-image {
-        width: 50px; 
+        width: 50px;
         height: 50px;
-        object-fit: cover; 
+        object-fit: cover;
         padding-bottom: 5px;
     }
-    .ultimaPlaylist{
+
+    .ultimaPlaylist {
         padding: 10px;
     }
+
     li {
         list-style-type: none;
         margin-right: 15px;
     }
+
     a.lastplay {
         color: rgb(255, 255, 255);
         width: 100%;
         margin-bottom: 8px;
         background-color: #000000;
     }
+
     a.lastplay:hover {
         background-color: #56595d;
     }
-    #myDiv, #myDivBackground {
+
+    #myDiv,
+    #myDivBackground {
         width: 70%;
         margin-left: 15%;
         display: flex;
@@ -1691,17 +1783,14 @@ b{
         border-radius: 0px;
         height: 8px;
         background-color: #0077ff;
-
     }
+
     #myDivBackground {
         background-color: #ffffff;
     }
-    b{
+
+    b {
         margin: 12px;
     }
-    
+
 }
-
-
-
-  
