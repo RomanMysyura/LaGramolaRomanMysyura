@@ -29,6 +29,7 @@ if ($songid == -1) {
     <title>Crear Playlist</title>
 </head>
 <body>
+<!-- Menu -->
 <nav class="menu">
     <ul>
         <li><a href="index.php">Playlists</a></li>
@@ -37,7 +38,7 @@ if ($songid == -1) {
     </ul>
 </nav>
 <?php
-
+//Escriu el nom del usuari que esta guardat a la sessio
 if (isset($_POST["nom"]))  {
     $nom = $_POST['nom'];
     $_SESSION["usuari"] = $nom;
@@ -48,33 +49,36 @@ if (isset($_SESSION["usuari"])) {
 }
 
 
-
 ?>
 <div class="fondotext">
     <h1 class="titol">Crear Playlist</h1>
 </div>
 
 <div class="divCreacioPlayist">
-<form action="guardar_playlist.php" method="post" id="formulariplaylists">
+    <!-- Formulari per crear la playlist -->
+<form action="guardar_playlist.php" method="post" id="formulariplaylists"> 
     <label for="nom_playlist" id="titolcrearplaylist">Nom de la playlist:</label>
     <input id="nom_playlist" type="text" name="nom_playlist" required>
         <br><br>
+        <!-- Aqui mostrem les cançons disponibles -->
         <div class="divMostrarcançons">
         <details>
             <summary><h3>Clica per afegir les cançons</h3></summary>
-
             <?php
-        $songs = json_decode(file_get_contents("songs.json"), true);
-            foreach ($songs as $song) {
-                echo "<input type='checkbox' name='cancons[]' value='{$song['num']}'>  {$song['title']}<br>";
-        }
-    ?>
+            // Mostra les cançons disponibles
+                $songs = json_decode(file_get_contents("songs.json"), true);
+                foreach ($songs as $song) {
+                    // Amb el checkbox podem seleccionar les cançons
+                    echo "<input type='checkbox' name='cancons[]' value='{$song['num']}'>  {$song['title']}<br>";
+                }
+            ?>
 
         </details>
         </div>
     
 
         <br>
+        <!-- S'esxecutara el arxiu "guardar_playlist.php" cliquem submit-->
     <input id="enviarplaylist" type="submit" value="Enviar">
 </form>
 </div> 

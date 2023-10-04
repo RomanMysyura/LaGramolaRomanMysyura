@@ -16,13 +16,6 @@ if ($songid == -1) {
     $songid = count($songs) - 1;
 }
 
-
-
-
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="ca">

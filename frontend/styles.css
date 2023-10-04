@@ -16,7 +16,6 @@
     margin: 0px;
     padding: 10px;
     color: aliceblue;
-
 }
 
 ul {
@@ -52,7 +51,7 @@ a:hover {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Arial", sans-serif;
     margin: 0px;
     padding: 0px;
     background-color: #d3d3d3;
@@ -73,7 +72,9 @@ body {
     max-width: 150px;
     height: auto;
     border-radius: 50%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 99px 31px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 99px 31px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 99px 31px rgba(0, 0, 0, 0.75);
     position: fixed;
     bottom: 140px;
     left: 38%;
@@ -104,7 +105,6 @@ body {
     position: fixed;
     left: 1px;
     bottom: 140px;
-
 }
 
 #IDequalizer1,
@@ -121,7 +121,6 @@ body {
     width: 6px;
     height: 11px;
     margin: 1px;
-
 }
 
 @keyframes IDequalizer5Infinitely {
@@ -138,7 +137,6 @@ body {
     50% {
         height: 27px;
     }
-
 }
 
 .IDequalizer1Rotating {
@@ -173,7 +171,6 @@ body {
     animation: IDequalizer5Infinitely 0.4s linear infinite;
 }
 
-
 .logosong {
     display: flex;
     justify-content: center;
@@ -181,13 +178,11 @@ body {
     height: 100%;
 }
 
-
 .reproductor {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-
 }
 
 .art-box {
@@ -214,7 +209,6 @@ body {
     padding: 15px;
     gap: 20px;
     height: 44px;
-
 }
 
 .controls-box img {
@@ -227,7 +221,7 @@ body {
     background-color: #000000;
     border: none;
     border-radius: 8px;
-    transition: transform .2s;
+    transition: transform 0.2s;
 }
 
 .controls-box button:hover {
@@ -237,7 +231,6 @@ body {
     cursor: pointer;
     transform: scale(1.3);
 }
-
 
 .volum {
     display: flex;
@@ -266,17 +259,17 @@ body {
     justify-content: center;
     position: fixed;
     bottom: 66px;
-    width: 40%;
+    width: 70%;
     border-radius: 0px;
     appearance: none;
     outline: none;
-    height: 2px;
+    height: 5px;
     background-color: #0077ff;
     transition: value 0.2s linear;
 }
 
 .progreso:hover {
-    height: 10px;
+    height: 6px;
     transition: 0.1s ease;
     cursor: pointer;
     background-color: #0077ff;
@@ -290,12 +283,10 @@ input::-webkit-slider-thumb {
     outline: none;
     height: 5px;
     background: rgb(255, 255, 255);
-
 }
 
 .playlists {
     grid-template-columns: 1fr 1fr 1fr;
-
 }
 
 .playlist {
@@ -360,7 +351,6 @@ a.botocanco:hover {
 
 details {
     display: block;
-
 }
 
 details summary {
@@ -399,7 +389,6 @@ p {
 .musica::-webkit-scrollbar-track {
     background-color: lightgrey;
 }
-
 
 .nomusuari {
     position: fixed;
@@ -488,11 +477,10 @@ p {
 
 #enviarplaylist:hover,
 a.lastplay:hover {
-    transition: transform .2s;
+    transition: transform 0.2s;
     background-color: #0062ff;
     transform: scale(1.02);
 }
-
 
 .divMostrarcançons {
     border: 1px solid black;
@@ -503,13 +491,12 @@ a.lastplay:hover {
     height: 100%;
     padding-top: 5px;
     padding-left: 15px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 
 #titoleliminarplaylist {
     font-weight: bold;
     padding-left: 15px;
-
 }
 
 #eliminarplaylist {
@@ -527,16 +514,15 @@ a.lastplay:hover {
 }
 
 #eliminarplaylist a:hover {
-    transition: transform .2s;
+    transition: transform 0.2s;
     background-color: #0062ff;
     transform: scale(1.02);
-
 }
 
 #currentTime {
     position: fixed;
     bottom: 40px;
-    left: 10%;
+    left: 15%;
     color: #ffffff;
 }
 
@@ -585,7 +571,6 @@ a.lastplay:hover {
     border-radius: 0px;
     height: 8px;
     background-color: #0077ff;
-
 }
 
 #myDivBackground {
@@ -615,7 +600,6 @@ b {
         margin: 0px;
         padding: 10px;
         color: aliceblue;
-
     }
 
     ul {
@@ -647,7 +631,7 @@ b {
     }
 
     body {
-        font-family: 'Arial', sans-serif;
+        font-family: "Arial", sans-serif;
         margin: 0px;
         padding: 0px;
         background-color: #d3d3d3;
@@ -668,7 +652,9 @@ b {
         max-width: 350px;
         height: auto;
         border-radius: 50%;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0px 0px 99px 31px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 99px 31px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 99px 31px rgba(0, 0, 0, 0.75);
         position: fixed;
         bottom: 27%;
         left: 54%;
@@ -699,7 +685,6 @@ b {
         position: fixed;
         left: 6px;
         bottom: 40px;
-
     }
 
     #IDequalizer1,
@@ -716,7 +701,6 @@ b {
         width: 6px;
         height: 11px;
         margin: 1px;
-
     }
 
     @keyframes IDequalizer5Infinitely {
@@ -733,7 +717,6 @@ b {
         50% {
             height: 27px;
         }
-
     }
 
     .IDequalizer1Rotating {
@@ -780,7 +763,6 @@ b {
         flex-direction: column;
         align-items: center;
         padding: 20px;
-
     }
 
     .art-box {
@@ -807,14 +789,11 @@ b {
         padding: 15px;
         gap: 20px;
         height: 44px;
-
     }
 
     .controls-box img {
         height: 25px;
         width: 25px;
-
-
     }
 
     .controls-box button {
@@ -822,7 +801,7 @@ b {
         background-color: #000000;
         border: none;
         border-radius: 8px;
-        transition: transform .2s;
+        transition: transform 0.2s;
     }
 
     .controls-box button:hover {
@@ -837,13 +816,13 @@ b {
         display: flex;
         justify-content: right;
         position: fixed;
-        bottom: 64px;
+        bottom: 66px;
         right: 30px;
         width: 10%;
         border-radius: 0px;
         appearance: none;
         outline: none;
-        height: 7px;
+        height: 5px;
         background-color: #0077ff;
         transform: rotate(0deg);
     }
@@ -861,14 +840,13 @@ b {
         border-radius: 0px;
         appearance: none;
         outline: none;
-        height: 2px;
+        height: 5px;
         background-color: #0077ff;
         transition: value 0.2s linear;
-
     }
 
     .progreso:hover {
-        height: 10px;
+        height: 6px;
         transition: 0.1s ease;
         cursor: pointer;
         background-color: #0077ff;
@@ -882,7 +860,6 @@ b {
         outline: none;
         height: 7px;
         background: rgb(255, 255, 255);
-
     }
 
     .playlists {
@@ -903,12 +880,11 @@ b {
         border-radius: 2px;
         height: 100%;
         padding-bottom: 0px;
-
     }
 
     .playlist:hover {
         transition: 0.1s ease;
-        transform: scale(1.03);   
+        transform: scale(1.03);
     }
 
     .songsplaylist {
@@ -952,7 +928,6 @@ b {
 
     details {
         display: block;
-
     }
 
     details summary {
@@ -991,12 +966,11 @@ b {
         background-color: lightgrey;
     }
 
-
     .nomusuari {
         position: fixed;
         top: 80px;
         color: rgb(255, 255, 255);
-        left: 69%;
+        right: 20px;
     }
 
     .textnom {
@@ -1027,7 +1001,6 @@ b {
         transform: scale(1.03);
         background-color: #0077ff;
     }
-
 
     /* -- Estils per la pagina crearplaylist.php -- */
     .divCreacioPlayist,
@@ -1080,11 +1053,10 @@ b {
 
     #enviarplaylist:hover,
     a.lastplay:hover {
-        transition: transform .2s;
+        transition: transform 0.2s;
         background-color: #0062ff;
         transform: scale(1.02);
     }
-
 
     .divMostrarcançons {
         border: 1px solid black;
@@ -1095,13 +1067,12 @@ b {
         height: 100%;
         padding-top: 5px;
         padding-left: 15px;
-        padding-bottom: 10px
+        padding-bottom: 10px;
     }
 
     #titoleliminarplaylist {
         font-weight: bold;
         padding-left: 15px;
-
     }
 
     #eliminarplaylist {
@@ -1119,10 +1090,9 @@ b {
     }
 
     #eliminarplaylist a:hover {
-        transition: transform .2s;
+        transition: transform 0.2s;
         background-color: #0062ff;
         transform: scale(1.02);
-
     }
 
     #currentTime {
@@ -1177,7 +1147,6 @@ b {
         border-radius: 0px;
         height: 8px;
         background-color: #0077ff;
-
     }
 
     #myDivBackground {
@@ -1187,12 +1156,10 @@ b {
     b {
         margin: 12px;
     }
-
 }
 
 /* Diseny per ORDINADOR */
 @media (min-width: 1024px) {
-
     .menu {
         padding: 0px;
         margin: 0px;
@@ -1210,7 +1177,6 @@ b {
         margin: 0px;
         padding: 10px;
         color: aliceblue;
-
     }
 
     ul {
@@ -1247,7 +1213,7 @@ b {
     }
 
     body {
-        font-family: 'Arial', sans-serif;
+        font-family: "Arial", sans-serif;
         margin: 0px;
         padding: 0px;
         background-color: #d3d3d3;
@@ -1268,7 +1234,9 @@ b {
         max-width: 350px;
         height: auto;
         border-radius: 50%;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0px 0px 99px 31px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 99px 31px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 99px 31px rgba(0, 0, 0, 0.75);
         position: fixed;
         bottom: 25%;
         left: 61%;
@@ -1289,7 +1257,6 @@ b {
         animation: rotateInfinitely 4s linear infinite;
     }
 
-
     #IDequalizer {
         height: 50px;
         width: 100px;
@@ -1300,7 +1267,6 @@ b {
         position: fixed;
         left: 2.3%;
         bottom: 40px;
-
     }
 
     #IDequalizer1,
@@ -1317,8 +1283,6 @@ b {
         width: 6px;
         height: 11px;
         margin: 1px;
-
-
     }
 
     @keyframes IDequalizer5Infinitely {
@@ -1335,7 +1299,6 @@ b {
         50% {
             height: 27px;
         }
-
     }
 
     .IDequalizer1Rotating {
@@ -1377,13 +1340,11 @@ b {
         height: 100%;
     }
 
-
     .reproductor {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px;
-
     }
 
     .art-box {
@@ -1410,14 +1371,11 @@ b {
         padding: 15px;
         gap: 20px;
         height: 44px;
-
     }
 
     .controls-box img {
         height: 25px;
         width: 25px;
-
-
     }
 
     .controls-box button {
@@ -1425,7 +1383,7 @@ b {
         background-color: #000000;
         border: none;
         border-radius: 8px;
-        transition: transform .2s;
+        transition: transform 0.2s;
     }
 
     .controls-box button:hover {
@@ -1440,19 +1398,18 @@ b {
         display: flex;
         justify-content: right;
         position: fixed;
-        bottom: 64px;
+        bottom: 66px;
         right: 30px;
         width: 10%;
         border-radius: 0px;
         appearance: none;
         outline: none;
-        height: 8px;
+        height: 5px;
         background-color: #0077ff;
         transform: rotate(0deg);
     }
 
     .volum:hover {
-
         height: 7px;
         transition: 0.1s ease;
         cursor: pointer;
@@ -1460,7 +1417,6 @@ b {
     }
 
     .progreso {
-
         display: flex;
         justify-content: center;
         position: fixed;
@@ -1469,15 +1425,13 @@ b {
         border-radius: 0px;
         appearance: none;
         outline: none;
-        height: 2px;
+        height: 5px;
         background-color: #0077ff;
         transition: value 0.2s linear;
-
-
     }
 
     .progreso:hover {
-        height: 10px;
+        height: 6px;
         transition: 0.1s ease;
         cursor: pointer;
         background-color: #0077ff;
@@ -1561,7 +1515,6 @@ b {
 
     details {
         display: block;
-
     }
 
     details summary {
@@ -1604,7 +1557,7 @@ b {
         position: fixed;
         top: 16px;
         color: rgb(255, 255, 255);
-        left: 77%;
+        right: 20px;
     }
 
     .textnom {
@@ -1687,7 +1640,7 @@ b {
 
     #enviarplaylist:hover,
     a.lastplay:hover {
-        transition: transform .2s;
+        transition: transform 0.2s;
         background-color: #0062ff;
         transform: scale(1.02);
     }
@@ -1701,13 +1654,12 @@ b {
         height: 100%;
         padding-top: 5px;
         padding-left: 15px;
-        padding-bottom: 10px
+        padding-bottom: 10px;
     }
 
     #titoleliminarplaylist {
         font-weight: bold;
         padding-left: 15px;
-
     }
 
     #eliminarplaylist {
@@ -1725,10 +1677,9 @@ b {
     }
 
     #eliminarplaylist a:hover {
-        transition: transform .2s;
+        transition: transform 0.2s;
         background-color: #0062ff;
         transform: scale(1.02);
-
     }
 
     #currentTime {
@@ -1792,5 +1743,17 @@ b {
     b {
         margin: 12px;
     }
+
+
+
+
+
+
+
+
+
+
+
+    
 
 }

@@ -3,10 +3,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nom_playlist = $_POST["nom_playlist"];
     $cancons = $_POST["cancons"];
 
-    // Cargar el archivo playlists.json
+    // Carrega el arxiu playlists.json
     $playlists = json_decode(file_get_contents("playlists.json"), true);
 
-    // Generar un ID único para la nueva playlist (simplemente usando el conteo de playlists actuales)
+    // Genera nova id per la playlist nova, sumant les playlists.
     $id = count($playlists);
 
     // Crear la nueva playlist
