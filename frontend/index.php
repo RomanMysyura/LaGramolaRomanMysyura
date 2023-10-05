@@ -57,9 +57,6 @@ if(isset($songid)) {
 	</head>
 	
 	<body>
-	
-
-
 		<!-- Menu -->
 		<nav class="menu">
 			<ul> 
