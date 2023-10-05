@@ -84,14 +84,34 @@ if (isset($_SESSION["usuari"])) {
 </div> 
 
 
+<!-- Aquesta part seveix per pujar arxius -->
+<div class="divCreacioPlayist">
+    <br>
+    <form action="add_song.php" method="post" enctype="multipart/form-data" class="">
+        <label for="artist">Artista:</label>
+        <input class="posarartista" type="text" name="artist" required><br><br>
+        
+        <label for="title">Titol de la cançó:</label>
+        <input class="posartitolsong" type="text" name="title" required><br><br>
+        
+        <label for="image">Imatge (PNG):</label>
+        <input class="posarimatge" type="file" name="image" accept=".png" required><br><br>
+        
+        <label for="song">Cançó (MP3):</label>
+        <input class="posarsong" type="file" name="song" accept=".mp3" required><br><br>
+        
+        <input class="enviarsong" type="submit" value="AFEGIR CANÇÓ">
+    </form>
+    <br>
+</div>
+
+
+
 
 <div class="divCreacioPlayist">
     <br>
     <label for="nom_playlist" id="titoleliminarplaylist">Eliminar la playlist:</label>
     <br><br>
-
-
-        
     <?php
         $playlists = json_decode(file_get_contents("playlists.json"), true);
             foreach ($playlists as $playlist) {
@@ -104,6 +124,9 @@ if (isset($_SESSION["usuari"])) {
 
     <br>
 </div>
+
+
+
 
 
 </body>

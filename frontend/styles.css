@@ -591,6 +591,40 @@ a.lastplay:hover {
 b {
     margin: 12px;
 }
+.posarartista,
+.posartitolsong{
+    height: 20px;
+    width: 400px;
+    float: right;
+    margin-right: 20px;
+}
+
+.enviarsong{
+    float: right;
+    margin-top: -13px;
+    background-color: #000000;
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 10px;
+    width: 170px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    border: 0px solid rgb(0, 0, 0);
+    
+}
+.enviarsong:hover{
+    background-color: #001aff;
+}
+.posarimatge,.posarsong{
+    float: right;
+    margin-right: 155px;
+    
+}
+
+
+
 
 /* Diseny per TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -937,10 +971,6 @@ b {
         width: 100%;
     }
 
-    details {
-        display: block;
-    }
-
     details summary {
         list-style: none;
         display: block;
@@ -1036,49 +1066,9 @@ b {
         text-align: center;
     }
 
-    #nom_playlist {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
 
     #triarlescancons {
         margin-bottom: 10px;
-    }
-
-    #enviarplaylist {
-        width: 100%;
-        background-color: #000000;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        box-shadow: 1px 1px 1px black;
-    }
-
-    #enviarplaylist:hover,
-    a.lastplay:hover {
-        transition: transform 0.2s;
-        background-color: #0062ff;
-        transform: scale(1.02);
-    }
-
-    .divMostrarcançons {
-        border: 1px solid black;
-        cursor: pointer;
-        background-color: #b1aaa3;
-        box-shadow: 1px 1px 1px black;
-        border-radius: 2px;
-        height: 100%;
-        padding-top: 5px;
-        padding-left: 15px;
-        padding-bottom: 10px;
     }
 
     #titoleliminarplaylist {
@@ -1524,10 +1514,7 @@ b {
         width: 100%;
     }
 
-    details {
-        display: block;
-    }
-
+   
     details summary {
         list-style: none;
         display: block;
@@ -1600,19 +1587,6 @@ b {
         background-color: #0077ff;
     }
 
-    /* -- Estils per la pagina crearplaylist.php -- */
-    .divCreacioPlayist,
-    .DivUltimaPlaylist {
-        background-color: #8b939d;
-        align-content: center;
-        width: 580px;
-        margin: auto;
-        border: 1px solid rgb(0, 0, 0);
-        padding: 10px;
-        margin-top: 20px;
-        box-shadow: 3px 3px 3px black;
-    }
-
     #formulariplaylists {
         align-content: center;
         margin: 20px;
@@ -1623,74 +1597,15 @@ b {
         text-align: center;
     }
 
-    #nom_playlist {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
 
     #triarlescancons {
         margin-bottom: 10px;
     }
 
-    #enviarplaylist {
-        width: 100%;
-        background-color: #000000;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        box-shadow: 1px 1px 1px black;
-    }
-
-    #enviarplaylist:hover,
-    a.lastplay:hover {
-        transition: transform 0.2s;
-        background-color: #0062ff;
-        transform: scale(1.02);
-    }
-
-    .divMostrarcançons {
-        border: 1px solid black;
-        cursor: pointer;
-        background-color: #b1aaa3;
-        box-shadow: 1px 1px 1px black;
-        border-radius: 2px;
-        height: 100%;
-        padding-top: 5px;
-        padding-left: 15px;
-        padding-bottom: 10px;
-    }
 
     #titoleliminarplaylist {
         font-weight: bold;
         padding-left: 15px;
-    }
-
-    #eliminarplaylist {
-        padding-top: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 15px;
-    }
-
-    #eliminarplaylist a {
-        margin-top: 0px;
-        background-color: #000000;
-        margin-right: 15px;
-    }
-
-    #eliminarplaylist a:hover {
-        transition: transform 0.2s;
-        background-color: #0062ff;
-        transform: scale(1.02);
     }
 
     #currentTime {
@@ -1754,17 +1669,6 @@ b {
     b {
         margin: 12px;
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

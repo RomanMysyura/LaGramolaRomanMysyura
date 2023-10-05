@@ -3,10 +3,10 @@
 if (isset($_GET['id'])) {
     $idEliminar = $_GET['id'];
 
-    // Cargar el archivo playlists.json
+    // Carreguem el arxiu json
     $playlists = json_decode(file_get_contents("playlists.json"), true);
 
-    // Buscar y eliminar la playlist con el id proporcionado
+    // Busquem la playlist amb la mateixa id i la eliminem
     foreach ($playlists as $index => $playlist) {
         if ($playlist['id'] == $idEliminar) {
             unset($playlists[$index]);
