@@ -91,15 +91,9 @@ fetch('songs.json')
 // Funció que permet reproduir o pausar la cançó actual
 function playPause() {
 
-    cancion.addEventListener('timeupdate', function () {
-        progreso.value = cancion.currentTime;  // Actualitza el valor del slider
-    });
-    progreso.addEventListener('input', function () {
-        cancion.currentTime = progreso.value;  // Actualitza la posició de la cançò
-    });
+   
     cancion.addEventListener('loadedmetadata', function () {
         progreso.max = cancion.duration;
-
         // Actualitza el temps total del reproductor
         const totalTimeElement = document.getElementById('totalTime');
         totalTimeElement.textContent = formatTime(cancion.duration);
@@ -109,6 +103,12 @@ function playPause() {
     cancion.addEventListener('timeupdate', function () {
         const currentTimeElement = document.getElementById('currentTime');
         currentTimeElement.textContent = formatTime(cancion.currentTime);
+    });
+    cancion.addEventListener('timeupdate', function () {
+        progreso.value = cancion.currentTime;  // Actualitza el valor del slider
+    });
+    progreso.addEventListener('input', function () {
+        cancion.currentTime = progreso.value;  // Actualitza la posició de la cançò
     });
 
 
@@ -142,7 +142,7 @@ function playPause() {
     IDequalizer7.classList.add('IDequalizer7Rotating');
     IDequalizer8.classList.add('IDequalizer8Rotating');
 
-    //Aquesta funció s'executa quan la cançó esta reproduint
+    //Aquesta funció s'executa quan la cançó s'esta reproduint
     if (audioElement.paused) {
         // S'incrementa el valor "reproduccions" en el arxiu songs.json
         fetch('updateSong.php', {
@@ -153,14 +153,11 @@ function playPause() {
             body: `currentSong=${currentSong}`, // Envia el valor de currentSong al arxiu PHP
         })
             .then(response => response.text())
-            .then(data => {
-            })
             .catch((error) => {
                 console.error('Error, no sha guardat la reproducció:', error);
             });
 
         audioElement.play();
-
         // Cambia la transparencia dels buttons
         bcntrlbefore.style.opacity = '0.4';
         bcntrlrandom.style.opacity = '0.4';
@@ -231,8 +228,8 @@ function stopSong() {
     IDequalizer8.classList.remove('IDequalizer8Rotating');
 }
 
-const cancion = document.getElementById('player');
-const progreso = document.querySelector('.progreso');
+
+
 
 
 // cancion.addEventListener('loadedmetadata', function () {
@@ -245,6 +242,8 @@ function formatTime(seconds) {
     seconds = Math.floor(seconds) % 60;
     return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
 }
+const cancion = document.getElementById('player');
+const progreso = document.querySelector('.progreso');
 
 //Aquesta part serveix per actualitzar els valors de temps real de la cançó i temps total de la cançó
 const currentTimeElement = document.getElementById('currentTime');

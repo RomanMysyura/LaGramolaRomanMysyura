@@ -24,8 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES['image']) && isset($_F
         "url" => $songPath,
         "image" => $imagePath
     );
-    array_push($songs, $newSong); // Serveix per afegir la cançó al final de la array json
-    file_put_contents("songs.json", json_encode($songs));
+    array_push($songs, $newSong); // Serveix per afegir les dades de la cançó al final de la array
+    file_put_contents("songs.json", json_encode($songs)); // Serveix per actualitzar i guardar arxiu json
     header("Location: crearplaylist.php");
     exit;
 }

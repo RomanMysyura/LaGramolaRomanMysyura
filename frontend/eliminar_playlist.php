@@ -6,7 +6,7 @@ if (isset($_GET['id'])) {
     // Carreguem el arxiu json
     $playlists = json_decode(file_get_contents("playlists.json"), true);
 
-    // Busquem la playlist amb la mateixa id i la eliminem
+    // Busquem la playlist amb la mateixa id i la 
     foreach ($playlists as $index => $playlist) {
         if ($playlist['id'] == $idEliminar) {
             unset($playlists[$index]);
@@ -14,13 +14,13 @@ if (isset($_GET['id'])) {
         }
     }
 
-    // Reindexar el array para que no queden índices vacíos después de eliminar
+    // Actualitza el arxiu json per que no quedin espais en blanc
     $playlists = array_values($playlists);
 
-    // Guardar las playlists actualizadas en el archivo playlists.json
+    // Guardar les playlists actualitzades
     file_put_contents("playlists.json", json_encode($playlists));
 
-    // Redireccionar al usuario a index.php
+    // Torna a la pagina home
     header("Location: index.php");
     exit;
 }

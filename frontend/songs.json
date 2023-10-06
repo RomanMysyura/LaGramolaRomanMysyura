@@ -1,1 +1,138 @@
-[{"num":0,"reproduccions":64,"arists":"Billie Eilish","title":"Billie Eilish - Happier Than Ever","url":"songs\/billie-eilish_-_happier-than-ever.mp3","image":"images\/song1.png"},{"num":1,"reproduccions":9,"arists":"Billie Eilish","title":"Billie Eilish - Bad Guy","url":"songs\/billie-eilish_-_bad-guy.mp3","image":"images\/song2.png"},{"num":2,"reproduccions":37,"arists":"50 Cent","title":"50 Cent - In Da Club","url":"songs\/50-cent_-_in-da-club.mp3","image":"images\/song3.png"},{"num":3,"reproduccions":11,"arists":"Eminem","title":"Eminem - The Real Slim Shady","url":"songs\/eminem_-_the-real-slim-shady.mp3","image":"images\/song4.png"},{"num":4,"reproduccions":13,"arists":"Justin Bieber","title":"Justin Bieber - Chance The Rapper Holy","url":"songs\/justin-bieber_-_holy.mp3","image":"images\/song5.png"},{"num":5,"reproduccions":5,"arists":"Justin Bieber","title":"Justin Bieber, Kehlani - Get Me","url":"songs\/justin-bieber_-_get-me.mp3","image":"images\/song6.png"},{"num":6,"reproduccions":6,"arists":"Coldplay","title":"Coldplay - Hymn For The Weekend","url":"songs\/coldplay_-_hymn-for-the-weekend.mp3","image":"images\/song7.png"},{"num":7,"reproduccions":9,"arists":"Lil Peep","title":"Lil Peep - Hate Me","url":"songs\/lil-peep_-_hate-me.mp3","image":"images\/song8.png"},{"num":8,"reproduccions":22,"arists":"Lil Peep","title":"Lil Peep - Falling Down","url":"songs\/lil-peep_-_falling-down.mp3","image":"images\/song9.png"},{"num":9,"reproduccions":0,"arists":"Illenium","title":"Illenium - Don\u2019t Give Up On Me","url":"songs\/illenium_-_dont-give-up-on-me.mp3","image":"images\/song10.png"},{"num":10,"reproduccions":2,"arists":"Skrillex","title":"Skrillex - Kyoto","url":"songs\/skrillex_-_kyoto-ft-sirah.mp3","image":"images\/song11.png"},{"num":11,"reproduccions":1,"arists":"Stellamara","title":"Stellamara - Prituri Se Planinata","url":"songs\/stellamara_-_prituri-se-planinata.mp3","image":"images\/song12.png"},{"num":12,"reproduccions":8,"arists":"Nanik","title":"Nanik - Number 1","url":"songs\/nanik_-_number-1.mp3","image":"images\/song13.png"},{"num":13,"reproduccions":8,"arists":"Illenium","title":"Illenium - Make Me Do","url":"songs\/illenium_-_make-me-do.mp3","image":"images\/song14.png"},{"num":14,"reproduccions":48,"arists":"AFK","title":"AFK - Gleam Eyes","url":"songs\/afk_-_gleam-eyes.mp3","image":"images\/song15.png"},{"num":15,"reproduccions":1,"arists":"Frost","title":"Frost - Raven Hall Of Kings","url":"songs\/stellamara_-_prituri-se-planinata.mp3","image":"images\/song16.png"},{"num":16,"reproduccions":2,"arists":"Coldplay","title":"Coldplay - My universe","url":"songs\/coldplay-my-universe.mp3","image":"images\/song17.png"}]
+[
+    {
+        "num": 0,
+        "reproduccions": 79,
+        "arists": "Billie Eilish",
+        "title": "Billie Eilish - Happier Than Ever",
+        "url": "songs\/billie-eilish_-_happier-than-ever.mp3",
+        "image": "images\/song1.png"
+    },
+    {
+        "num": 1,
+        "reproduccions": 10,
+        "arists": "Billie Eilish",
+        "title": "Billie Eilish - Bad Guy",
+        "url": "songs\/billie-eilish_-_bad-guy.mp3",
+        "image": "images\/song2.png"
+    },
+    {
+        "num": 2,
+        "reproduccions": 37,
+        "arists": "50 Cent",
+        "title": "50 Cent - In Da Club",
+        "url": "songs\/50-cent_-_in-da-club.mp3",
+        "image": "images\/song3.png"
+    },
+    {
+        "num": 3,
+        "reproduccions": 11,
+        "arists": "Eminem",
+        "title": "Eminem - The Real Slim Shady",
+        "url": "songs\/eminem_-_the-real-slim-shady.mp3",
+        "image": "images\/song4.png"
+    },
+    {
+        "num": 4,
+        "reproduccions": 13,
+        "arists": "Justin Bieber",
+        "title": "Justin Bieber - Chance The Rapper Holy",
+        "url": "songs\/justin-bieber_-_holy.mp3",
+        "image": "images\/song5.png"
+    },
+    {
+        "num": 5,
+        "reproduccions": 5,
+        "arists": "Justin Bieber",
+        "title": "Justin Bieber, Kehlani - Get Me",
+        "url": "songs\/justin-bieber_-_get-me.mp3",
+        "image": "images\/song6.png"
+    },
+    {
+        "num": 6,
+        "reproduccions": 6,
+        "arists": "Coldplay",
+        "title": "Coldplay - Hymn For The Weekend",
+        "url": "songs\/coldplay_-_hymn-for-the-weekend.mp3",
+        "image": "images\/song7.png"
+    },
+    {
+        "num": 7,
+        "reproduccions": 9,
+        "arists": "Lil Peep",
+        "title": "Lil Peep - Hate Me",
+        "url": "songs\/lil-peep_-_hate-me.mp3",
+        "image": "images\/song8.png"
+    },
+    {
+        "num": 8,
+        "reproduccions": 22,
+        "arists": "Lil Peep",
+        "title": "Lil Peep - Falling Down",
+        "url": "songs\/lil-peep_-_falling-down.mp3",
+        "image": "images\/song9.png"
+    },
+    {
+        "num": 9,
+        "reproduccions": 1,
+        "arists": "Illenium",
+        "title": "Illenium - Don\u2019t Give Up On Me",
+        "url": "songs\/illenium_-_dont-give-up-on-me.mp3",
+        "image": "images\/song10.png"
+    },
+    {
+        "num": 10,
+        "reproduccions": 3,
+        "arists": "Skrillex",
+        "title": "Skrillex - Kyoto",
+        "url": "songs\/skrillex_-_kyoto-ft-sirah.mp3",
+        "image": "images\/song11.png"
+    },
+    {
+        "num": 11,
+        "reproduccions": 1,
+        "arists": "Stellamara",
+        "title": "Stellamara - Prituri Se Planinata",
+        "url": "songs\/stellamara_-_prituri-se-planinata.mp3",
+        "image": "images\/song12.png"
+    },
+    {
+        "num": 12,
+        "reproduccions": 8,
+        "arists": "Nanik",
+        "title": "Nanik - Number 1",
+        "url": "songs\/nanik_-_number-1.mp3",
+        "image": "images\/song13.png"
+    },
+    {
+        "num": 13,
+        "reproduccions": 8,
+        "arists": "Illenium",
+        "title": "Illenium - Make Me Do",
+        "url": "songs\/illenium_-_make-me-do.mp3",
+        "image": "images\/song14.png"
+    },
+    {
+        "num": 14,
+        "reproduccions": 48,
+        "arists": "AFK",
+        "title": "AFK - Gleam Eyes",
+        "url": "songs\/afk_-_gleam-eyes.mp3",
+        "image": "images\/song15.png"
+    },
+    {
+        "num": 15,
+        "reproduccions": 1,
+        "arists": "Frost",
+        "title": "Frost - Raven Hall Of Kings",
+        "url": "songs\/stellamara_-_prituri-se-planinata.mp3",
+        "image": "images\/song16.png"
+    },
+    {
+        "num": 16,
+        "reproduccions": 3,
+        "arists": "Coldplay",
+        "title": "Coldplay - My universe",
+        "url": "songs\/coldplay-my-universe.mp3",
+        "image": "images\/song17.png"
+    }
+]
